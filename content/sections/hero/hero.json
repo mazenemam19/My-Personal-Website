@@ -1,20 +1,20 @@
 {
-  "intro": "Hello, world",
+  "intro": "Engineering the web, one pixel at a time.",
   "heroPhoto": {
-    "src": "",
-    "alt": ""
+    "src": "../../images/avatar.jpg",
+    "alt": "Mazen Emam Portrait"
   },
   "image": {
     "src": "../../images/waving-hand.png",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm Mazen",
+  "title": "Mazen Emam",
   "subtitle": {
-    "prefix": "A Mid-Senior Frontend Engineer with ",
-    "highlight": "over 4 years",
-    "suffix": " of professional experience."
+    "prefix": "Front-End Visionary & UI Craftsman | ",
+    "highlight": "Building the future of the web",
+    "suffix": " with precision and passion."
   },
-  "description": "I'm passionate about Open Source, currently focused on learning about React ecosystem and MERN stack",
+  "description": "I design and engineer world-class digital experiences. Trusted by teams and founders to deliver pixel-perfect, high-performance, and accessible web apps. If you want your product to stand out, you want me on your team.",
   "socialProfiles": {
     "from": ["LinkedIn", "Medium", "Github", "Mail"],
     "showIcons": true

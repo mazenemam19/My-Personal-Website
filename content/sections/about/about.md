@@ -1,13 +1,13 @@
 ---
 imageSrc: "../../images/avatar.jpg"
-imageAlt: "My Avatar"
+imageAlt: "Mazen Emam Portrait"
 ---
 
-I'm an experienced software engineer, proficient in developing user interfaces with React and other frontend web technologies. 
+I’m Mazen Emam, a front-end engineer obsessed with detail and driven by results. My code powers products used by thousands, and my interfaces are designed to delight and convert.
 
-I have a good understanding of web development principles, including HTML, CSS, JavaScript, and related frameworks, and I'm experienced in building interactive, visually appealing web applications. 
+- 4+ years building high-impact, production-grade web apps for startups and global teams.
+- Expert in React, TypeScript, and the modern JavaScript ecosystem.
+- Passionate about performance, accessibility, and pixel-perfect UI.
+- Proven ability to lead, mentor, and deliver under pressure.
 
-I'm also able to efficiently debug and optimize web applications, utilizing debugging tools and performance optimization techniques to ensure a smooth user experience.
-
-I'm interested in React & it's ecosystem, I'm also interested in learning more about <ins>Node</ins>, <ins>Next</ins>, and <ins>React Native</ins> in the future.
-
+If you want a developer who sweats the details, obsesses over user experience, and ships beautiful, robust products—let’s talk.

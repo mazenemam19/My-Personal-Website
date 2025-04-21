@@ -1,11 +1,150 @@
-@media (max-width: 360px) {
-    .style-module--Interests--3d3b3 {
-        grid-template-columns: repeat(1, max(13.5rem, 100%));
-    }
-    
-    
-    .style-module--Interest--4bfd4 {
-        width: max(13.5rem, 100%);
-    } 
+/*
+  Modern, minimal, Apple/Vercel-inspired global styles for the portfolio site.
+  Uses black, white, and a bold blue accent. Applies clean typography, more whitespace, and improved visual hierarchy.
+*/
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Inter", "SF Pro Display", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+button,
+.button {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+button::after,
+.button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(59, 130, 246, 0.18);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+button:active::after,
+.button:active::after {
+  width: 200%;
+  height: 200%;
+}
+
+.scroll-indicator {
+  position: fixed;
+  left: 50%;
+  bottom: 2.5rem;
+  transform: translateX(-50%);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.scroll-dot {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6 60%, #6366f1 100%);
+  box-shadow: 0 0 16px #3b82f6aa;
+  animation: bounce 1.2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(18px);
+  }
+}
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .style-module--Interests--3d3b3 {
+    grid-template-columns: repeat(1, max(13.5rem, 100%));
+  }
+
+  .style-module--Interest--4bfd4 {
+    width: max(13.5rem, 100%);
+  }
+}

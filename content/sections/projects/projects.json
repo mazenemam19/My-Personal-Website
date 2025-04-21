@@ -4,7 +4,7 @@
       "visible": true,
       "category": "frontend",
       "title": "Trackstube",
-      "description": "Listen To Your Favorite YouTube Songs With No Ads 💢, Share Your Music Taste With The 🌐",
+      "description": "Engineered a seamless, ad-free music experience for YouTube lovers. Designed for speed, sharing, and pure listening joy. Powered by React and GraphQL.",
       "tags": ["React", "JavaScript", "GraphQL"],
       "image": {
         "src": "../../images/tracks.png",
@@ -26,8 +26,8 @@
       "visible": true,
       "category": "frontend",
       "title": "Shopping Cart",
-      "description": "Shopping Cart App with Typescript and Redux Toolkit",
-      "tags": ["React", "TypeScript", "Redux-Toolkit","Redux-Thunk"],
+      "description": "Built a blazing-fast e-commerce demo with TypeScript and Redux. Features real-time cart updates, robust state management, and a frictionless UX.",
+      "tags": ["React", "TypeScript", "Redux-Toolkit", "Redux-Thunk"],
       "image": {
         "src": "../../images/store.png",
         "alt": "Shopping Cart"
@@ -47,8 +47,8 @@
       "visible": true,
       "category": "fullstack",
       "title": "Yelp Camp",
-      "description": "Node.js fullstack app with cluster map, image upload, full authentication and authorization and other security features.",
-      "tags": ["Node", "Express","MongoDB"],
+      "description": "Fullstack Node.js app with advanced security, image uploads, and interactive maps. Built for scale and reliability—deployed and used by real users.",
+      "tags": ["Node", "Express", "MongoDB"],
       "image": {
         "src": "../../images/camp.png",
         "alt": "Yelp Camp",
