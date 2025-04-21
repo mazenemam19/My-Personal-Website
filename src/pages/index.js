@@ -15,8 +15,8 @@ import "./index.css";
 
 // Animated scroll indicator
 const ScrollIndicator = () => (
-  <div className='scroll-indicator'>
-    <span className='scroll-dot' />
+  <div className="scroll-indicator">
+    <span className="scroll-dot" />
   </div>
 );
 
@@ -39,15 +39,19 @@ export default function IndexPage() {
 
   return (
     <>
-      <Seo title='Mazen Emam' />
+      <Seo title="Mazen Emam" />
       <Banner />
       <ScrollIndicator />
       <Page useSplashScreenAnimation>
-        <HeroSection sectionId='hero' />
-        <ArticlesSection sectionId='articles' heading='Latest Articles' sources={["Medium"]} />
-        <AboutSection sectionId='about' heading='About Me' />
-        <InterestsSection sectionId='skills' heading='Skills' />
-        <ProjectsSection sectionId='projects' heading='My Side Projects' />
+        <HeroSection sectionId="hero" />
+        <ArticlesSection
+          sectionId="articles"
+          heading="Latest Articles"
+          sources={["Medium"]}
+        />
+        <AboutSection sectionId="about" heading="About Me" />
+        <InterestsSection sectionId="skills" heading="Skills" />
+        <ProjectsSection sectionId="projects" heading="My Side Projects" />
         <Testimonials />
       </Page>
     </>

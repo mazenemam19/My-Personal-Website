@@ -41,15 +41,15 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className='testimonials-section' ref={sectionRef}>
-      <h2 className='testimonials-title animated-underline'>What Others Say</h2>
-      <div className='testimonials-list'>
+    <section className="testimonials-section" ref={sectionRef}>
+      <h2 className="testimonials-title animated-underline">What Others Say</h2>
+      <div className="testimonials-list">
         {testimonials.map((t, i) => (
-          <blockquote key={i} className='testimonial'>
-            <p className='testimonial-quote'>“{t.quote}”</p>
-            <footer className='testimonial-footer'>
-              <span className='testimonial-name'>{t.name}</span>
-              <span className='testimonial-title'>{t.title}</span>
+          <blockquote key={i} className="testimonial">
+            <p className="testimonial-quote">“{t.quote}”</p>
+            <footer className="testimonial-footer">
+              <span className="testimonial-name">{t.name}</span>
+              <span className="testimonial-title">{t.title}</span>
             </footer>
           </blockquote>
         ))}

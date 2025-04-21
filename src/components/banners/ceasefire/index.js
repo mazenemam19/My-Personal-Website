@@ -11,10 +11,10 @@ export default function CeaseFire() {
   }, []);
 
   return (
-    <div className='banner animate-in' ref={bannerRef}>
-      <a href='https://ceasefiretoday.com/' target='_blank' rel='noreferrer' referrerPolicy='no-referrer'>
+    <div className="banner animate-in" ref={bannerRef}>
+      <a href="https://ceasefiretoday.com/" target="_blank" rel="noreferrer" referrerPolicy="no-referrer">
         # CeasefireNow!{" "}
-        <span role='img' aria-label='palestine emoji'>
+        <span role="img" aria-label="palestine emoji">
           🇵🇸
         </span>
       </a>
