@@ -6,7 +6,7 @@
 body {
   background: #000;
   color: #fff;
-  font-family: "Inter", "SF Pro Display", "Segoe UI", Arial, sans-serif;
+  font-family: 'Inter', 'SF Pro Display', 'Segoe UI', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.7;
   margin: 0;
@@ -47,7 +47,7 @@ button, .button {
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.08);
+  box-shadow: 0 2px 12px rgba(59,130,246,0.08);
   transition: background 0.2s, box-shadow 0.2s;
   position: relative;
   overflow: hidden;
@@ -61,10 +61,10 @@ button::after, .button::after {
   top: 50%;
   width: 0;
   height: 0;
-  background: rgba(59, 130, 246, 0.18);
+  background: rgba(59,130,246,0.18);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.4s cubic-bezier(.4,0,.2,1), height 0.4s cubic-bezier(.4,0,.2,1);
   z-index: 0;
 }
 
@@ -89,14 +89,13 @@ button:active::after, .button:active::after {
   border-radius: 50%;
   background: linear-gradient(135deg, #3b82f6 60%, #6366f1 100%);
   box-shadow: 0 0 16px #3b82f6aa;
-  animation: bounce 1.2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: bounce 1.2s infinite cubic-bezier(.4,0,.2,1);
 }
 
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(18px);
   }
@@ -105,7 +104,7 @@ button:active::after, .button:active::after {
 .section-animate {
   opacity: 0;
   transform: translateY(48px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
 }
 
 .section-animate.visible {
@@ -127,7 +126,6 @@ button:active::after, .button:active::after {
   body {
     font-size: 16px;
   }
-
   section {
     margin-bottom: 2.5rem;
   }
@@ -137,7 +135,6 @@ button:active::after, .button:active::after {
   .style-module--Interests--3d3b3 {
     grid-template-columns: repeat(1, max(13.5rem, 100%));
   }
-
   .style-module--Interest--4bfd4 {
     width: max(13.5rem, 100%);
   }

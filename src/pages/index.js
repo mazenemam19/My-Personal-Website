@@ -7,7 +7,7 @@ import {
   ProjectsSection,
   Seo,
 } from "gatsby-theme-portfolio-minimal";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Banner from "../components/banners/ceasefire";
 import Testimonials from "../components/testimonials";
 
