@@ -10,5 +10,5 @@ I'm Mazen Emam, a front-end engineer obsessed with detail and driven by results.
 - Passionate about performance, accessibility, and pixel-perfect UI.
 - Proven ability to lead, mentor, and deliver under pressure.
 
-If you want a developer who sweats the details, obsesses over user experience, and ships beautiful, robust products—
-let's talk.
+If you want a developer who sweats the details, obsesses over user experience,
+and ships beautiful, robust products—let's talk.

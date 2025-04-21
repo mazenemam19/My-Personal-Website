@@ -15,12 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-family: inherit;
   font-weight: 700;
@@ -40,12 +35,10 @@ a:hover {
 }
 
 section {
-
   margin-bottom: 4rem;
 }
 
-button,
-.button {
+button, .button {
   background: #3b82f6;
   color: #fff;
   border: none;
@@ -61,8 +54,7 @@ button,
   z-index: 1;
 }
 
-button::after,
-.button::after {
+button::after, .button::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -76,8 +68,7 @@ button::after,
   z-index: 0;
 }
 
-button:active::after,
-.button:active::after {
+button:active::after, .button:active::after {
   width: 200%;
   height: 200%;
 }
@@ -102,12 +93,11 @@ button:active::after,
 }
 
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
-  50% {
 
+  50% {
     transform: translateY(18px);
   }
 }
@@ -137,6 +127,7 @@ button:active::after,
   body {
     font-size: 16px;
   }
+
   section {
     margin-bottom: 2.5rem;
   }
@@ -148,7 +139,6 @@ button:active::after,
   }
 
   .style-module--Interest--4bfd4 {
-
     width: max(13.5rem, 100%);
   }
 }
