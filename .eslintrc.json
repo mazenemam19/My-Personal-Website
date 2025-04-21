@@ -9,7 +9,8 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "max-len": ["error", { "code": 120 }],
-    "no-mixed-operators": "error"
+    "no-mixed-operators": "error",
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^React$" }]
   },
   "env": {
     "browser": true,

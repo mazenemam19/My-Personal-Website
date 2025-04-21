@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./index.css";
 import testimonialsData from "../../../content/sections/testimonials/testimonials.json";
 const testimonials = testimonialsData.testimonials;

@@ -1,7 +1,11 @@
+/*
+  Modern, minimal, Apple/Vercel-inspired testimonials section styles.
+*/
+
 .testimonials-section {
   background: #000;
   color: #fff;
-  padding: 4rem 0 3rem 0;
+  padding: 4rem 0 3rem;
   text-align: center;
   opacity: 0;
   transform: translateY(48px);
@@ -34,7 +38,7 @@
   bottom: -6px;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #3b82f6 60%, #6366f1 100%);
+  background: linear-gradient(90deg, oklch(60.5% 0.2 259.7) 60%, oklch(56.6% 0.19 276.8) 100%);
   border-radius: 2px;
   transform: translateX(-110%);
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,15 +60,15 @@
   background: #111;
   border-radius: 1.5rem;
   padding: 2rem 2.5rem;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
-  border-left: 4px solid #3b82f6; /* Accent: blue-500 */
+  box-shadow: 0 4px 32px rgb(0 0 0 / 12%);
+  border-left: 4px solid oklch(60.5% 0.2 259.7);
   text-align: left;
   transition: box-shadow 0.2s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .testimonial:hover {
-  box-shadow: 0 12px 48px rgba(59, 130, 246, 0.22);
-  border-left-color: #6366f1; /* Accent: indigo-500 */
+  box-shadow: 0 12px 48px rgb(59 130 246 / 22%);
+  border-left-color: oklch(56.6% 0.19 276.8);
   transform: scale(1.025) translateY(-2px);
 }
 
@@ -83,7 +87,7 @@
 
 .testimonial-name {
   font-weight: 600;
-  color: #3b82f6;
+  color: oklch(60.5% 0.2 259.7);
 }
 
 .testimonial-title {
@@ -91,15 +95,13 @@
   color: #aaa;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .testimonials-list {
     gap: 1.5rem;
   }
-  
   .testimonial {
     padding: 1.25rem 1rem;
   }
-  
   .testimonials-title {
     font-size: 2rem;
   }

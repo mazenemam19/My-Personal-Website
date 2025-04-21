@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import {
   AboutSection,
   ArticlesSection,
@@ -7,7 +8,6 @@ import {
   ProjectsSection,
   Seo,
 } from "gatsby-theme-portfolio-minimal";
-import { useEffect } from "react";
 import Banner from "../components/banners/ceasefire";
 import Testimonials from "../components/testimonials";
 

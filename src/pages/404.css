@@ -1,3 +1,7 @@
+/*
+  Modern, minimal, Apple/Vercel-inspired 404 page styles.
+*/
+
 .notfound-container {
   min-height: 100vh;
   background: #000;
@@ -14,7 +18,7 @@
   font-size: 7rem;
   font-weight: 900;
   letter-spacing: -0.05em;
-  color: #3b82f6;
+  color: oklch(60.5% 0.2 259.7);
   margin: 0;
 }
 
@@ -40,20 +44,20 @@
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
-  background: #3b82f6;
+  background: oklch(60.5% 0.2 259.7);
   color: #fff;
-  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.08);
+  box-shadow: 0 2px 12px rgb(59 130 246 / 8%);
   transition: background 0.2s, box-shadow 0.2s, transform 0.18s;
 }
 
 .notfound-home-btn:hover,
 .notfound-resume-btn:hover {
-  background: #6366f1;
-  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.12);
+  background: oklch(56.6% 0.19 276.8);
+  box-shadow: 0 4px 24px rgb(99 102 241 / 12%);
   transform: scale(1.04);
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .notfound-title {
     font-size: 4rem;
   }

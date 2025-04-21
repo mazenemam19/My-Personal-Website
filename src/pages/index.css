@@ -6,7 +6,7 @@
 body {
   background: #000;
   color: #fff;
-  font-family: 'Inter', 'SF Pro Display', 'Segoe UI', Arial, sans-serif;
+  font-family: Inter, SF Pro Display, Segoe UI, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.7;
   margin: 0;
@@ -24,13 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #3b82f6;
+  color: oklch(60.5% 0.2 259.7);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: #6366f1;
+  color: oklch(56.6% 0.19 276.8);
   text-decoration: underline;
 }
 
@@ -39,7 +39,7 @@ section {
 }
 
 button, .button {
-  background: #3b82f6;
+  background: oklch(60.5% 0.2 259.7);
   color: #fff;
   border: none;
   border-radius: 0.75rem;
@@ -47,7 +47,7 @@ button, .button {
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 12px rgba(59,130,246,0.08);
+  box-shadow: 0 2px 12px rgb(59 130 246 / 8%);
   transition: background 0.2s, box-shadow 0.2s;
   position: relative;
   overflow: hidden;
@@ -61,7 +61,7 @@ button::after, .button::after {
   top: 50%;
   width: 0;
   height: 0;
-  background: rgba(59,130,246,0.18);
+  background: rgb(59 130 246 / 18%);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.4s cubic-bezier(.4,0,.2,1), height 0.4s cubic-bezier(.4,0,.2,1);
@@ -87,8 +87,8 @@ button:active::after, .button:active::after {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3b82f6 60%, #6366f1 100%);
-  box-shadow: 0 0 16px #3b82f6aa;
+  background: linear-gradient(135deg, oklch(60.5% 0.2 259.7) 60%, oklch(56.6% 0.19 276.8) 100%);
+  box-shadow: 0 0 16px oklch(60.5% 0.2 259.7 / 67%);
   animation: bounce 1.2s infinite cubic-bezier(.4,0,.2,1);
 }
 
@@ -118,11 +118,11 @@ button:active::after, .button:active::after {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6;
+  background: oklch(60.5% 0.2 259.7);
   border-radius: 8px;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   body {
     font-size: 16px;
   }
@@ -131,7 +131,7 @@ button:active::after, .button:active::after {
   }
 }
 
-@media (max-width: 360px) {
+@media (width <= 360px) {
   .style-module--Interests--3d3b3 {
     grid-template-columns: repeat(1, max(13.5rem, 100%));
   }
