@@ -18,7 +18,9 @@ keywords:
 
 ## Why Your Portfolio Matters
 
-Your portfolio is your digital handshake. It’s the first impression, the proof, and the pitch—all in one. A great portfolio doesn’t just show what you’ve done; it convinces people you’re the developer they need.
+Your portfolio is your digital handshake. It’s the first impression, the proof,
+and the pitch—all in one. A great portfolio doesn’t just show what you’ve done;
+it convinces people you’re the developer they need.
 
 ## What Makes a Portfolio Unforgettable?
 
@@ -39,9 +41,10 @@ Your portfolio is your digital handshake. It’s the first impression, the proof
 
 ```jsx
 // Lazy-load an image in React
-const Img = React.lazy(() => import("./MyImageComponent"));
+const Img = React.lazy(() => import('./MyImageComponent'));
 ```
 
 ## Final Thoughts
 
-A great portfolio is your best investment. Make it count—and make them want to hire you, no questions asked.
+A great portfolio is your best investment. Make it count—and make them want to
+hire you, no questions asked.

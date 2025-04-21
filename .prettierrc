@@ -2,5 +2,21 @@
   "printWidth": 80,
   "singleQuote": false,
   "jsxSingleQuote": false,
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "insertPragma": false,
+        "proseWrap": "never"
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "proseWrap": "always"
+      }
+    }
+  ]
 }

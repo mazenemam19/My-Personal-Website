@@ -40,13 +40,11 @@ a:hover {
 }
 
 section {
-
   margin-bottom: 4rem;
 }
 
 button,
 .button {
-
   background: #3b82f6;
   color: #fff;
   border: none;
@@ -124,35 +122,29 @@ button:active::after,
 }
 
 ::-webkit-scrollbar {
-
   width: 8px;
   background: #111;
 }
-::-webkit-scrollbar-thumb {
 
+::-webkit-scrollbar-thumb {
   background: #3b82f6;
   border-radius: 8px;
 }
 
 @media (max-width: 600px) {
   body {
-
     font-size: 16px;
   }
   section {
-
     margin-bottom: 2.5rem;
   }
 }
 
 @media (max-width: 360px) {
   .style-module--Interests--3d3b3 {
-
     grid-template-columns: repeat(1, max(13.5rem, 100%));
   }
-
   .style-module--Interest--4bfd4 {
-
     width: max(13.5rem, 100%);
   }
 }

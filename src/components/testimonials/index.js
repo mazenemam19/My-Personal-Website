@@ -26,18 +26,30 @@ export default function Testimonials() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
+    const sectionIds = [
+      "hero",
+      "articles",
+      "about",
+      "skills",
+      "projects"
+    ];
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
     const onScroll = () => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        section.classList.add("animate-in");
-        window.removeEventListener("scroll", onScroll);
-      }
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add("section-animate", "visible");
+        }
+      });
     };
     window.addEventListener("scroll", onScroll);
     onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      // No mixed return: always return undefined
+    };
   }, []);
 
   return (
