@@ -26,13 +26,7 @@ export default function Testimonials() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const sectionIds = [
-      "hero",
-      "articles",
-      "about",
-      "skills",
-      "projects"
-    ];
+    const sectionIds = ["hero", "articles", "about", "skills", "projects"];
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter(Boolean);
@@ -54,7 +48,10 @@ export default function Testimonials() {
 
   return (
     <section className="testimonials-section" ref={sectionRef}>
-      <h2 className="testimonials-title animated-underline">What Others Say</h2>
+      <h2 className="testimonials-title animated-underline">
+        {/* TODO: i18n or config-driven string */}
+        What Others Say
+      </h2>
       <div className="testimonials-list">
         {testimonials.map((t, i) => (
           <blockquote key={i} className="testimonial">

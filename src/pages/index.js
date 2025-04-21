@@ -23,7 +23,9 @@ const ScrollIndicator = () => (
 export default function IndexPage() {
   useEffect(() => {
     const sectionIds = ["hero", "articles", "about", "skills", "projects"];
-    const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
     const onScroll = () => {
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
