@@ -1,7 +1,7 @@
 {
   "siteMetadata": {
     "language": "en",
-    "siteUrl": "https://mazenadel19.vercel.app/",
+    "siteUrl": "https://mazenemam19.vercel.app/",
     "title": "Mazen Emam",
     "titleTemplate": "%s · Portfolio",
     "description": "Mazen Emam is an experienced software engineer who is proficient in developing user interfaces with React and other frontend web technologies. He has a good understanding of web development principles, including HTML, CSS, JavaScript, and related frameworks, and is experienced in building interactive, visually appealing web applications. He is also able to efficiently debug and optimize web applications, utilizing debugging tools and performance optimization techniques to ensure a smooth user experience.",
@@ -9,10 +9,10 @@
     "avatar": "../content/images/avatar.jpg",
     "bio": "This biography will be used in the footer area of an article and can contain some more details about the author.",
     "social": {
-      "github": "https://github.com/mazenadel19",
-      "medium": "https://mazenadel19.medium.com",
-      "linkedin": "https://www.linkedin.com/in/mazen-adel19/",
-      "mail": "mailto:mazenadel19@gmail.com"
+      "github": "https://github.com/mazenemam19",
+      "medium": "https://mazenemam19.medium.com",
+      "linkedin": "https://www.linkedin.com/in/mazenemam19/",
+      "mail": "mailto:mazenemam19@proton.me"
     }
   },
   "siteConfiguration": {
@@ -28,8 +28,8 @@
         "url": "/Mazen_Emam_Mid_Senior_Frontend_Engineer.pdf"
       },
       "footer": [
-        { "label": "github", "url": "https://github.com/mazenadel19" },
-        { "label": "mail", "url": "mailto:mazenadel19@gmail.com" }
+        { "label": "github", "url": "https://github.com/mazenemam19" },
+        { "label": "mail", "url": "mailto:mazenemam19@proton.me" }
       ]
     },
     "featureToggles": {

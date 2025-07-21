@@ -9,12 +9,12 @@
       "image": {
         "src": "../../images/tracks.png",
         "alt": "Trackstube",
-        "linkTo": "https://github.com/mazenadel19/React-Graphql-Trackstube"
+        "linkTo": "https://github.com/mazenemam19/React-Graphql-Trackstube"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/mazenadel19/React-Graphql-Trackstube"
+          "url": "https://github.com/mazenemam19/React-Graphql-Trackstube"
         },
         {
           "type": "external",
@@ -35,7 +35,7 @@
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/mazenadel19/RTK-TS-Shopping-Cart"
+          "url": "https://github.com/mazenemam19/RTK-TS-Shopping-Cart"
         },
         {
           "type": "external",
@@ -52,12 +52,12 @@
       "image": {
         "src": "../../images/camp.png",
         "alt": "Yelp Camp",
-        "linkTo": "https://github.com/mazenadel19/Express-YelpCamp"
+        "linkTo": "https://github.com/mazenemam19/Express-YelpCamp"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/mazenadel19/Express-YelpCamp"
+          "url": "https://github.com/mazenemam19/Express-YelpCamp"
         },
         {
           "type": "external",
@@ -69,6 +69,6 @@
   "button": {
     "visible": false,
     "label": "Visit on Github",
-    "url": "https://github.com/mazenadel19"
+    "url": "https://github.com/mazenemam19"
   }
 }

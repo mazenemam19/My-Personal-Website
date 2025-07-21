@@ -3,7 +3,7 @@ module.exports = {
     title: `Mazen Emam`,
     description: `Mazen Emam is a software engineer based in Egypt, He is proficient in developing user interfaces with React and other frontend web technologies. He has a good understanding of web development principles, including HTML, CSS, JavaScript, and related frameworks, and is experienced in building interactive, visually appealing web applications. He is also able to efficiently debug and optimize web applications, utilizing debugging tools and performance optimization techniques to ensure a smooth user experience.`,
     author: `Mazen Emam`,
-    siteUrl: `https://mazenadel19.vercel.app`,
+    siteUrl: `https://mazenemam19.vercel.app`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: "gatsby-theme-portfolio-minimal",
       options: {
-        siteUrl: "https://mazenadel19.vercel.app/", // Used for sitemap generation
+        siteUrl: "https://mazenemam19.vercel.app/", // Used for sitemap generation
         manifestSettings: {
           favicon: "./content/images/favicon.png", // Path is relative to the root
           siteName: "Mazen Emam", // Used in manifest.json
