@@ -8,8 +8,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
-  "engines": {
-    "node": ">=18.0.0"
+   "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "gatsby": "^5.0.1",
