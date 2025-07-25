@@ -3,6 +3,6 @@
 ## Setup
 
 ```
-npm install
-npm run develop
+pnpm install
+pnpm run develop
 ```
