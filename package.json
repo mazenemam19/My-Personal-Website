@@ -8,6 +8,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",
     "gatsby": "^5.0.1",
