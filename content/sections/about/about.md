@@ -3,11 +3,12 @@ imageSrc: "../../images/avatar.jpg"
 imageAlt: "My Avatar"
 ---
 
-I'm an experienced software engineer, proficient in developing user interfaces with React and other frontend web technologies. 
+I'm a Software Engineer with 4+ years of experience architecting and delivering high-performance web applications. I specialize in React, TypeScript, and modern frontend ecosystems with proven ability to lead development initiatives and optimize system performance.
 
-I have a good understanding of web development principles, including HTML, CSS, JavaScript, and related frameworks, and I'm experienced in building interactive, visually appealing web applications. 
+I focus on building scalable solutions in SaaS and enterprise environments, with experience contributing to platforms serving manufacturing, analytics, and recruitment sectors across MENA and Europe.
 
-I'm also able to efficiently debug and optimize web applications, utilizing debugging tools and performance optimization techniques to ensure a smooth user experience.
+My expertise includes leading technical migrations (recently reduced build times by 50% through Vite adoption), implementing real-time collaboration systems, and mentoring development teams to establish quality assurance processes.
 
-I'm interested in React & it's ecosystem, I'm also interested in learning more about <ins>Node</ins>, <ins>Next</ins>, and <ins>React Native</ins> in the future.
+Currently working as a Software Engineer at Siren Analytics, architecting enterprise-grade solutions for European clients while exploring advanced patterns in <ins>React Query</ins>, <ins>WebSocket infrastructure</ins>, and <ins>TypeScript optimization</ins>.
+
 

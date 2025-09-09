@@ -1,6 +1,62 @@
 {
   "interests": [
     {
+      "label": "React",
+      "image": {
+        "src": "../../images/react.png",
+        "alt": "React"
+      }
+    },
+    {
+      "label": "TypeScript",
+      "image": {
+        "src": "../../images/typescript.png",
+        "alt": "TypeScript"
+      }
+    },
+    {
+      "label": "JavaScript",
+      "image": {
+        "src": "../../images/js.png",
+        "alt": "JavaScript"
+      }
+    },
+    {
+      "label": "Redux",
+      "image": {
+        "src": "../../images/redux.png",
+        "alt": "Redux"
+      }
+    },
+    {
+      "label": "React Query",
+      "image": {
+        "src": "../../images/react-query.webp",
+        "alt": "React Query"
+      }
+    },
+    {
+      "label": "Material UI",
+      "image": {
+        "src": "../../images/mui.png",
+        "alt": "Material UI"
+      }
+    },
+    {
+      "label": "Vite",
+      "image": {
+        "src": "../../images/vite.webp",
+        "alt": "Vite"
+      }
+    },
+    {
+      "label": "SASS",
+      "image": {
+        "src": "../../images/sass.png",
+        "alt": "SASS"
+      }
+    },
+    {
       "label": "HTML",
       "image": {
         "src": "../../images/html.png",
@@ -15,34 +71,19 @@
       }
     },
     {
-      "label": "JavaScript",
+      "label": "Bootstrap",
       "image": {
-        "src": "../../images/js.png",
-        "alt": "JavaScript"
+        "src": "../../images/bootstrap.png",
+        "alt": "Bootstrap"
       }
     },
     {
-      "label": "TypeScript",
+      "label": "Git",
       "image": {
-        "src": "../../images/typescript.png",
-        "alt": "TypeScript"
+        "src": "../../images/git.png",
+        "alt": "Git"
       }
-    },
-    {
-      "label": "React",
-      "image": {
-        "src": "../../images/react.png",
-        "alt": "React"
-      }
-    },
-    {
-      "label": "Redux",
-      "image": {
-        "src": "../../images/redux.png",
-        "alt": "Redux"
-      }
-    },
-    {
+    }, {
       "label": "MobX",
       "image": {
         "src": "../../images/mobx.png",
@@ -54,33 +95,6 @@
       "image": {
         "src": "../../images/firebase.png",
         "alt": "Firebase"
-      }
-    },
-    {
-      "label": "Material UI",
-      "image": {
-        "src": "../../images/mui.png",
-        "alt": "Material UI"
-      }
-    },
-    {
-      "label": "Bootstrap",
-      "image": {
-        "src": "../../images/bootstrap.png",
-        "alt": "Bootstrap"
-      }
-    },
-    {
-      "label": "SASS",
-      "image": {
-        "src": "../../images/sass.png",
-        "alt": "SASS"
-      }
-    },{
-      "label": "Git",
-      "image": {
-        "src": "../../images/git.png",
-        "alt": "Git"
       }
     }
   ],

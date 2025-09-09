@@ -10,11 +10,11 @@
   },
   "title": "I'm Mazen Emam",
   "subtitle": {
-    "prefix": "A Software Engineer with ",
-    "highlight": "over 4 years",
-    "suffix": " of professional experience."
+    "prefix": "Software Engineer specializing in frontend development with ",
+    "highlight": "4+ years",
+    "suffix": " of experience building scalable web applications."
   },
-  "description": "I'm passionate about Open Source, currently focused on learning about React ecosystem and MERN stack",
+  "description": "I help companies enhance user experiences and operational efficiency through data-driven solutions across MENA and Europe.",
   "socialProfiles": {
     "from": ["LinkedIn", "Medium", "Github", "Mail"],
     "showIcons": true
