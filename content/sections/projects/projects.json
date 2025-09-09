@@ -4,7 +4,7 @@
       "visible": true,
       "category": "frontend",
       "title": "Trackstube",
-      "description": "Listen To Your Favorite YouTube Songs With No Ads 💢, Share Your Music Taste With The 🌐",
+      "description": "Music streaming app with ad-free YouTube integration and social sharing features using GraphQL and Apollo Client.",
       "tags": ["React", "JavaScript", "GraphQL"],
       "image": {
         "src": "../../images/tracks.png",
@@ -26,7 +26,7 @@
       "visible": true,
       "category": "frontend",
       "title": "Shopping Cart",
-      "description": "Shopping Cart App with Typescript and Redux Toolkit",
+      "description": "E-commerce shopping cart application with robust state management using Redux Toolkit and TypeScript for type safety.",
       "tags": ["React", "TypeScript", "Redux-Toolkit","Redux-Thunk"],
       "image": {
         "src": "../../images/store.png",
@@ -47,7 +47,7 @@
       "visible": true,
       "category": "fullstack",
       "title": "Yelp Camp",
-      "description": "Node.js fullstack app with cluster map, image upload, full authentication and authorization and other security features.",
+      "description": "Full-stack campground review platform with authentication, authorization, image upload, cluster mapping, and comprehensive security features.",
       "tags": ["Node", "Express","MongoDB"],
       "image": {
         "src": "../../images/camp.png",
