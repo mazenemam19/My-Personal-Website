@@ -12,11 +12,16 @@
   "subtitle": {
     "prefix": "Software Engineer with ",
     "highlight": "4+ years",
-    "suffix": " building scalable web applications that drive business results."
-},
+    "suffix": " experience building scalable web applications and high-performance user interfaces."
+  },
   "description": "I help companies enhance user experiences and operational efficiency through data-driven solutions across MENA and Europe.",
   "socialProfiles": {
-    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "from": [
+      "LinkedIn",
+      "Medium",
+      "Github",
+      "Mail"
+    ],
     "showIcons": true
   }
 }

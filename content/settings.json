@@ -4,10 +4,10 @@
     "siteUrl": "https://mazenemam19.vercel.app/",
     "title": "Mazen Emam",
     "titleTemplate": "%s · Portfolio",
-    "description": "Mazen Emam is a Software Engineer specializing in frontend development with 4+ years of experience building scalable web applications that drive business results. He helps companies enhance user experiences and operational efficiency through data-driven solutions, having contributed to platforms serving manufacturing, analytics, and recruitment sectors across MENA and Europe.",
+    "description": "Mazen Emam is a Software Engineer specializing in frontend development with 4+ years of experience building scalable web applications. Based in Egypt, he builds high-performance user interfaces and operational tools for manufacturing, analytics, and recruitment sectors across MENA and Europe.",
     "author": "Mazen Emam",
     "avatar": "../content/images/avatar.jpg",
-    "bio": "This biography will be used in the footer area of an article and can contain some more details about the author.",
+    "bio": "Mazen Emam is a Software Engineer based in Egypt, specializing in React, TypeScript, and modern web technologies. He helps companies enhance user experiences and operational efficiency through data-driven frontend solutions.",
     "social": {
       "github": "https://github.com/mazenemam19",
       "medium": "https://mazenemam19.medium.com",
@@ -16,11 +16,19 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "ZE" },
+    "logo": {
+      "text": "ZE"
+    },
     "navigation": {
       "header": [
-        { "label": "About", "url": "/#about" },
-        { "label": "Projects", "url": "/#projects" }
+        {
+          "label": "About",
+          "url": "/#about"
+        },
+        {
+          "label": "Projects",
+          "url": "/#projects"
+        }
       ],
       "ctaButton": {
         "openNewTab": true,
@@ -28,8 +36,14 @@
         "url": "/Mazen_Emam_Software_Engineer.pdf"
       },
       "footer": [
-        { "label": "github", "url": "https://github.com/mazenemam19" },
-        { "label": "mail", "url": "mailto:mazenemam19@proton.me" }
+        {
+          "label": "github",
+          "url": "https://github.com/mazenemam19"
+        },
+        {
+          "label": "mail",
+          "url": "mailto:mazenemam19@proton.me"
+        }
       ]
     },
     "featureToggles": {
