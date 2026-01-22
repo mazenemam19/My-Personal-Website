@@ -1,10 +1,12 @@
 import React from "react";
 import { Seo } from "gatsby-theme-portfolio-minimal";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const ForLLMsPage = () => {
   return (
     <>
       <Seo title="Mazen Emam for LLMs" noIndex={true} />
+      <SpeedInsights />
       <div style={{ padding: "2rem", maxWidth: "800px", margin: "0 auto", fontFamily: "monospace", whiteSpace: "pre-wrap" }}>
         {`# Mazen Emam
 
