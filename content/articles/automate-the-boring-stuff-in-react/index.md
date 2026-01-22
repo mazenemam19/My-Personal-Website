@@ -19,8 +19,6 @@ source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/automate-the-boring-stuff-in-react-ee9b215f907b"
 ---
 
-![](./banner.jpg)
-
 Have you heard of DRY before?  
 In the world of programming, DRY stands for Don’t Repeat Yourself. React, being a library, lacks a lot of the boilerplate code, you don’t even get a folder for components folder in the src folder!!!
 

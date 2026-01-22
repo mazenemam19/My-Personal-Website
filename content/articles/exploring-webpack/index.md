@@ -38,7 +38,7 @@ Let me tell you a story about life before the front-end frameworks.
 
 Back in the old, when we were using only HTML, CSS, and Javascript, do you remember how we used to structure our HTML files?
 
-```bash
+```html
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -56,7 +56,7 @@ Back in the old, when we were using only HTML, CSS, and Javascript, do you remem
 
 What if we wanted to add Bootstrap to our project?
 
-```bash
+```html
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -78,7 +78,7 @@ Did you notice that your stylesheet and script are after Bootstrap's stylesheet 
 
 We would want the styles to override the default bootstrap styles or in the case of the script we wanted to make sure that the custom script runs the last thing on the webpage to make use of and override anything in the previous scripts, and to make sure that the rest of your page is fully rendered, so that when you do something like:
 
-```
+```javascript
 document.querySelector('#firstName')
 ```
 
@@ -358,6 +358,4 @@ One last thing you can do after analyzing your bundle, if having these libraries
 
 Wishing you a smaller bundle and a bug-free day.
 
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=778d9a469b29)
-
-*This post was originally published on [Medium](https://mazenemam19.medium.com/exploring-webpack-778d9a469b29?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/exploring-webpack-778d9a469b29).*

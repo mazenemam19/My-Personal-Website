@@ -398,6 +398,4 @@ Remember:
 
 A smooth TypeScript migration is all about consistency and smart prioritization -- focus on what brings the most value first.
 
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=1bdb2b363722)
-
 *This post was originally published on [Medium](https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722?source=rss-17340371ff6------2).*

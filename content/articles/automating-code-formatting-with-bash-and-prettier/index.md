@@ -168,6 +168,4 @@ I hope this tutorial has been helpful. If you have any questions or feedback, pl
 
 > **_Update:_** Excited to share that I've significantly enhanced this pre-commit hook! Read about the evolved version with ESLint integration, colorized output, and parallel processing in my new post:_ [_"_Level Up Your Pre-Commit Hook: Beyond Formatting_"_](https://mazenadel19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2)_._
 
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=f5f951e1522f)
-
-*This post was originally published on [Medium](https://mazenemam19.medium.com/automating-code-formatting-with-bash-and-prettier-f5f951e1522f?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/automating-code-formatting-with-bash-and-prettier-f5f951e1522f).*

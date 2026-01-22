@@ -51,11 +51,11 @@ Before diving into how I transitioned our old app to Vite, I'd like to share the
 
 *   **Faster Build Time:** Our GitHub workflow build time decreased from 12-13 minutes to just 7 minutes -- almost half the time! This transition saves our development team at least 20 minutes per developer each day.
 
-![](https://cdn-images-1.medium.com/max/971/1*RKCYk-2ipRJZ-g6kIzYuXA.png)
+![](./image-1.png)
 
 With Webpack
 
-![](https://cdn-images-1.medium.com/max/1024/1*yd_km7F1UDc534_8x2QETQ.png)
+![](./image-2.png)
 
 With Vite
 
@@ -82,10 +82,10 @@ This is the most crucial step. Extensive research is essential. I browsed Reddit
 and in the project root
 
 ```javascript
-`import` react from '@vitejs/plugin-react';
-`import` { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-`export` default defineConfig({
+export default defineConfig({
     plugins: [react()],
     build: { // to output your build into build dir the same as Webpack
         outDir: 'build',
@@ -100,7 +100,7 @@ and in the project root
 *   **Move** **index.html to the project root and fonts to the public directory then update reference paths to the fonts accordingly.**
 *   **Remove** **%PUBLIC\_URL% from links in** **index.html.**
 
-```
+```html
 <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> ❌ 
 <link rel="icon" href="/favicon.ico" /> ✅
 ```
@@ -164,7 +164,7 @@ and in the project root
 
 *   **Issue:** Vite doesn't automatically provide globalThis, which can cause issues if your code relies on it, Webpack was polyfilling it for us.
 
-![](https://cdn-images-1.medium.com/max/683/1*evpYUgNGo-plipAWlCRyOw.png)
+![](./image-3.png)
 
 global variable "globalThis" in a Webpack application
 
@@ -326,6 +326,4 @@ then I'd use them like vanilla CSS
 
 Transitioning from create-react-app to Vite has been a challenging but rewarding experience. The performance improvements alone have made the effort worthwhile, and I believe this will significantly boost both developer productivity and overall project maintainability. By carefully addressing these issues, you can make the most of Vite's modern tooling and improve the efficiency of your development workflow.
 
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=63bbd93861e5)
-
-*This post was originally published on [Medium](https://mazenemam19.medium.com/migrating-from-create-react-app-to-vite-boosting-performance-in-legacy-applications-63bbd93861e5?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/migrating-from-create-react-app-to-vite-boosting-performance-in-legacy-applications-63bbd93861e5).*

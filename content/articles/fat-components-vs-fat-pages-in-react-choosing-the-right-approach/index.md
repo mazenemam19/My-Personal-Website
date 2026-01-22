@@ -88,13 +88,13 @@ Ultimately, the choice between fat components and fat pages in React depends on 
 
 Let's apply the Single Responsibility Principle to a practical example: a complex select component. By breaking down the select component into smaller, focused components, we adhere to the SRP. Each component handles a specific responsibility, making the codebase more modular and maintainable.
 
-```html
+```javascript
 // SelectInput.js
 // Responsible for rendering the select input UI
 
-`import` React from 'react';
+import React from 'react';
 
-`const` SelectInput = ({ options, onChange }) => {
+const SelectInput = ({ options, onChange }) => {
   return (
     <select onChange={onChange}>
       {options.map((option) => (
@@ -106,57 +106,57 @@ Let's apply the Single Responsibility Principle to a practical example: a comple
   );
 };
 
-`export` default SelectInput;
+export default SelectInput;
 ```
 ```javascript
 // SelectValidator.js
 // Responsible for validating the selected option
 
-`const` SelectValidator = (selectedValue) => {
+const SelectValidator = (selectedValue) => {
   // Validation logic here
   return isValid;
 };
 
-`export` default SelectValidator;
+export default SelectValidator;
 ```
 ```javascript
 // SelectFetcher.js
 // Responsible for fetching data for select options
 
-`const` SelectFetcher = () => {
+const SelectFetcher = () => {
   // Data fetching logic here
   return options;
 };
 
-`export` default SelectFetcher;
+export default SelectFetcher;
 ```
-```html
+```javascript
 // SelectComponent.js
 // The main select component that brings everything together
 
-`import` React, { `useState`, `useEffect` } from 'react';
-`import` SelectInput from './SelectInput';
-`import` SelectValidator from './SelectValidator';
-`import` SelectFetcher from './SelectFetcher';
+import React, { useState, useEffect } from 'react';
+import SelectInput from './SelectInput';
+import SelectValidator from './SelectValidator';
+import SelectFetcher from './SelectFetcher';
 
-`const` SelectComponent = () => {
-  `const` [selectedValue, setSelectedValue] = `useState('')`;
-  `const` [options, setOptions] = `useState([])`;
+const SelectComponent = () => {
+  const [selectedValue, setSelectedValue] = useState('');
+  const [options, setOptions] = useState([]);
 
-  `useEffect(()` => {
-    `const` fetchData = async () => {
-      `const` fetchedOptions = await SelectFetcher();
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetchedOptions = await SelectFetcher();
       setOptions(fetchedOptions);
     };
 
     fetchData();
   }, []);
 
-  `const` handleChange = (event) => {
+  const handleChange = (event) => {
     setSelectedValue(event.target.value);
   };
 
-  `const` isValid = SelectValidator(selectedValue);
+  const isValid = SelectValidator(selectedValue);
 
   return (
     <div>
@@ -166,13 +166,11 @@ Let's apply the Single Responsibility Principle to a practical example: a comple
   );
 };
 
-`export` default SelectComponent;
+export default SelectComponent;
 ```
 
 By following this approach, we can easily modify and extend the functionality of the select component without affecting other parts of the application. This example demonstrates how applying the SRP can lead to more manageable and scalable codebases.
 
 Finally, whether you choose fat components or fat pages, or a combination of both, keep the Single Responsibility Principle in mind. Strive for modular, maintainable, and scalable code that aligns with your project's needs. Experiment, learn, and adapt your approach as your project evolves, ensuring an efficient and enjoyable development experience in React.
-
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=eecf653befe5)
 
 *This post was originally published on [Medium](https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-react-choosing-the-right-approach-eecf653befe5?source=rss-17340371ff6------2).*

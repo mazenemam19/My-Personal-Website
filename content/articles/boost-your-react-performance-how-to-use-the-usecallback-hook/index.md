@@ -132,6 +132,4 @@ Additionally, it's crucial to prioritize code readability and maintainability to
 
 So the next time you're passing functions down to child components, consider using the useCallback hook to optimize your React application. Your users (and your CPU) will thank you!
 
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=5b56b948b4ac)
-
 *This post was originally published on [Medium](https://mazenemam19.medium.com/boost-your-react-performance-how-to-use-the-usecallback-hook-5b56b948b4ac?source=rss-17340371ff6------2).*

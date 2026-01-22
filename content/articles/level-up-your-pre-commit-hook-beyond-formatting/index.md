@@ -256,6 +256,4 @@ Finally, if any ESLint errors block the commit, the script now provides a concis
 
 Automating these checks right at the commit stage is a fantastic way to catch issues early, maintain code consistency, and foster a healthier codebase overall. Give this updated script a try -- you might be surprised how much smoother and more confident your development process becomes!
 
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=026c9b504af2)
-
-*This post was originally published on [Medium](https://mazenemam19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenadel19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2?source=rss-17340371ff6------2).*

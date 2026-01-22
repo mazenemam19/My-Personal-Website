@@ -17,7 +17,6 @@ source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/my-unorthodox-frontend-interview-986cb934b9f5"
 ---
 
-![](./banner.png)
 _Picture from the Search Committee episode — The Office tv series_
 
 Last week I did my first technical interview at a medium-size tech company, most of the interviews I had so far were at small-size tech companies, It was interesting and different from other interviewing experiences I had before.

@@ -45,9 +45,6 @@ _Object.keys(json[0])_ returns an array with the keys of an object so now our _T
 ```
 
 setting the _TableHeaders_ & _Data_ states triggers a rerender, we then redraw our table and this is how it’d look like.
-
-![](./banner.png)
-
 Next, Sorting the Columns.
 
 {% gist https://gist.github.com/mazenadel19/2b1d61aea3414a004b6db154f4625a2f %}
@@ -120,5 +117,7 @@ Hope you found this post useful,
 Feel free to leave a comment if you have any questions.
 
 And you can find all the code from the demos here: [https://github.com/mazenadel19/React-SortingTableColumns](https://github.com/mazenadel19/React-SortingTableColumns)
+
+*This post was originally published on [Medium](https://medium.com/@mazenemam19/sorting-table-columns-8078d6b84337).*
 
 *This post was originally published on [Medium](https://medium.com/@mazenemam19/sorting-table-columns-8078d6b84337).*

@@ -19,7 +19,6 @@ source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/egyptfwd-react-nanodegree-walkthrough-2094238d9c64"
 ---
 
-![](./banner.jpg)
 _Photo by Nubelson Fernandes on Unsplash_
 
 [EgyptFWD](https://egfwd.com/) is a digital scholarship provided by the Egyptian Ministry of Communication and Information Technology.
