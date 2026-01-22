@@ -20,11 +20,11 @@ export default function IndexPage() {
       <Banner />
       <SpeedInsights />
       <Page useSplashScreenAnimation>
-        <HeroSection sectionId='hero' />
-        <ArticlesSection sectionId='articles' heading='Latest Articles' sources={["Medium"]} />
-        <AboutSection sectionId='about' heading='About Me' />
-        <InterestsSection sectionId='skills' heading='Skills' />
-        <ProjectsSection sectionId='projects' heading='My Side Projects' />
+        <HeroSection sectionId="hero" />
+        <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Blog']} />
+        <AboutSection sectionId="about" heading="About Me" />
+        <InterestsSection sectionId="skills" heading="Skills" />
+        <ProjectsSection sectionId="projects" heading="My Side Projects" />
       </Page>
     </>
   );
