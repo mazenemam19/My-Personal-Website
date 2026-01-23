@@ -21,11 +21,11 @@ source: "Medium"
 externalLink: "https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722?source=rss-17340371ff6------2"
 ---
 
-After maintaining a mid-sized React application for several years, our team decided to adopt TypeScript. Instead of a big-bang approach that would require rewriting the entire codebase, we chose a gradual migration strategy. In this article, I'll share our experience and provide a practical guide for teams looking to adopt TypeScript in their existing React applications.
+After maintaining a mid-sized `React` application for several years, our team decided to adopt `TypeScript`. Instead of a big-bang approach that would require rewriting the entire codebase, we chose a gradual migration strategy. In this article, I'll share our experience and provide a practical guide for teams looking to adopt `TypeScript` in their existing `React` applications.
 
 ### The Breaking Point: Why We Chose TypeScript
 
-As our React application grew, we faced recurring issues that slowed development and compromised stability. Changes in one part of the app would often break functionality elsewhere, going unnoticed until runtime. Without type safety, our front end mistakenly treated optional API properties as mandatory, causing UI failures.
+As our `React` application grew, we faced recurring issues that slowed development and compromised stability. Changes in one part of the app would often break functionality elsewhere, going unnoticed until runtime. Without type safety, our front end mistakenly treated optional API properties as mandatory, causing UI failures.
 
 **These challenges became especially problematic when:  
 **\- A single change to a shared component unexpectedly altered behavior across the app, sometimes breaking the UI  
@@ -34,42 +34,43 @@ As our React application grew, we faced recurring issues that slowed development
 \- Refactoring shared components without clear type definitions introduced hidden bugs  
 \- Onboarding new team members was difficult due to undocumented data structures and implicit contracts
 
-After several production incidents caused by type mismatches, we realized we needed a more robust solution. TypeScript emerged as the clear choice to help us catch these issues during development rather than in production.
+After several production incidents caused by type mismatches, we realized we needed a more robust solution. `TypeScript` emerged as the clear choice to help us catch these issues during development rather than in production.
 
 ### Why Gradual Adoption?
 
 The gradual adoption approach offers several benefits:  
-\- Allows the team to learn TypeScript while continuing to deliver features  
+\- Allows the team to learn `TypeScript` while continuing to deliver features  
 \- Reduces the risk of introducing bugs during migration  
 \- Provides immediate value through incremental improvements  
 \- Maintains development velocity
 
-### Step 1: Setting Up the TypeScript Infrastructure
+### Step 1: Setting Up the `TypeScript` Infrastructure
 
 #### Understanding Configuration Files
 
-Let's break down the essential configuration files needed for TypeScript adoption.
+Let's break down the essential configuration files needed for `TypeScript` adoption.
 
-#### 0\. Setting Up TypeScript
+#### 0\. Setting Up `TypeScript`
 
-Before transitioning your project to TypeScript, install the necessary dependencies:
+Before transitioning your project to `TypeScript`, install the necessary dependencies:
 
-```bash npm install --save-dev typescript @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser @types/css-modules
+```bash
+npm install --save-dev typescript @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser @types/css-modules
 ```
 
 #### Why These Packages?
 
-\- **typescript** -- The core TypeScript compiler.
+\- **`typescript`** -- The core TypeScript compiler.
 
-\- **@types/react** & **@types/react-dom**-- Provides TypeScript type definitions for React.
+\- **@types/react** & **@types/react-dom**-- Provides `TypeScript` type definitions for `React`.
 
-\- **@typescript-eslint/eslint-plugin** & **@typescript-eslint/parser** -- Enables ESLint to work with TypeScript.
+\- **@typescript-eslint/eslint-plugin** & **@typescript-eslint/parser** -- Enables `ESLint` to work with `TypeScript`.
 
-\- **@types/css-modules** -- Provides type definitions for CSS Modules, ensuring styles can be imported without TypeScript errors.
+\- **@types/css-modules** -- Provides type definitions for CSS Modules, ensuring styles can be imported without `TypeScript` errors.
 
 #### Updating Scripts
 
-If your project includes scripts that lint JavaScript files, update them to support .ts and .tsx files as well:
+If your project includes scripts that lint `JavaScript` files, update them to support .ts and .tsx files as well:
 
 ```
 "scripts": {
@@ -81,7 +82,7 @@ If your project includes scripts that lint JavaScript files, update them to supp
 
 #### 1\. TypeScript Configurations
 
-When migrating from JavaScript to TypeScript, the first step is setting up tsconfig.json. Before migration, our jsconfig.json was minimal:
+When migrating from `JavaScript` to `TypeScript`, the first step is setting up tsconfig.json. Before migration, our jsconfig.json was minimal:
 
 ```json
 {
@@ -91,9 +92,9 @@ When migrating from JavaScript to TypeScript, the first step is setting up tscon
 }
 ```
 
-This allowed absolute imports but lacked type safety and other TypeScript features. After migration, we introduced a more robust tsconfig.json:
+This allowed absolute imports but lacked type safety and other `TypeScript` features. After migration, we introduced a more robust tsconfig.json:
 
-```typescript
+```json
 {
     "compilerOptions": {
         "target": "ESNext", // Compiles to modern JavaScript (ESNext)
@@ -109,11 +110,11 @@ This allowed absolute imports but lacked type safety and other TypeScript featur
         "moduleResolution": "Node", // Resolves modules like Node.js does
         "resolveJsonModule": true, // Allows importing JSON files
         "isolatedModules": true, // Ensures each file is treated as a separate module
-        "noEmit": true, // Prevents TypeScript from emitting compiled JavaScript files
+        "noEmit": true, // Prevents `TypeScript` from emitting compiled `JavaScript` files
         "jsx": "react", // Use "react-jsx" for React 17+ to enable the new JSX transform
         "baseUrl": "src" // Enables absolute imports from "src"
     },
-    "include": ["src/**/*", "global.d.ts", "vite.config.ts"], // Specifies files TypeScript should check
+    "include": ["src/**/*", "global.d.ts", "vite.config.ts"], // Specifies files `TypeScript` should check
     "references": [{ "path": "./tsconfig.node.json" }] // Links to additional TypeScript configurations
 }
 ```
@@ -140,9 +141,9 @@ Additionally, for Node.js and build tools, we have a separate tsconfig.node.json
 *   "global.d.ts" - A global type definition file (discussed later in the article).
 *   "vite.config.ts" - Our Vite configuration, since it's TypeScript-based.
 
-If a file isn't included, TypeScript won't check it, so defining this ensures all necessary files are type-checked.
+If a file isn't included, `TypeScript` won't check it, so defining this ensures all necessary files are type-checked.
 
-**\-** **references**: This links additional tsconfig files for modularization. Here, we reference tsconfig.node.json, which configures TypeScript separately for build tools and prevents unnecessary type-checking in the main codebase.
+**\-** **references**: This links additional tsconfig files for modularization. Here, we reference tsconfig.node.json, which configures `TypeScript` separately for build tools and prevents unnecessary type-checking in the main codebase.
 
 #### Key Differences in JSX Configuration
 
@@ -150,7 +151,7 @@ If a file isn't included, TypeScript won't check it, so defining this ensures al
 
 **\-** **jsx: "react-jsx"** - Introduced in React 17+, enabling automatic JSX runtime without explicit React imports.
 
-If you're using React 17 or higher, update your config to "jsx": "react-jsx" for improved performance and a cleaner `import` structure.
+If you're using `React` 17 or higher, update your config to "jsx": "react-jsx" for improved performance and a cleaner `import` structure.
 
 #### Why separate config files?
 
@@ -179,7 +180,7 @@ In my case, I used it to manually declare types for a library (react-intl) due t
 
 #### 3\. ESLint Configuration
 
-To ensure a smooth transition from JavaScript to TypeScript, we updated .eslintrc. This configuration enforces strict type-checking for TypeScript while allowing some flexibility for JavaScript files.
+To ensure a smooth transition from `JavaScript` to `TypeScript`, we updated .eslintrc. This configuration enforces strict type-checking for `TypeScript` while allowing some flexibility for `JavaScript` files.
 
 3.1 create a base config file, mine is .eslintrc-custom-rules.json:
 
@@ -205,33 +206,33 @@ To ensure a smooth transition from JavaScript to TypeScript, we updated .eslintr
 
 then
 
-```typescript
+```json
 {
     "env": {
         "browser": true,
         "es2021": true,
         "node": true
     },
-    "parser": "@typescript-eslint/parser", // Use typescript-eslint parser 
+    "parser": `@typescript-eslint/parser`, // Use `typescript-eslint` parser 
     "parserOptions": {
-        "project": "./tsconfig.json", // Ensures ESLint understands TypeScript's config
+        "project": "./tsconfig.json", // Ensures `ESLint` understands `TypeScript`'s config
         "ecmaFeatures": {
-            "jsx": true // Enables JSX support
+            "jsx": true // Enables `JSX` support
         },
         "ecmaVersion": 12,
         "sourceType": "module"
     },
     "extends": [
         "eslint:recommended", // Basic JS best practices
-        "plugin:react/recommended", // React-specific linting rules
-        "plugin:react-hooks/recommended", // Enforces proper React Hooks usage
+        "plugin:react/recommended", // `React`-specific linting rules
+        "plugin:react-hooks/recommended", // Enforces proper `React` Hooks usage
         "plugin:promise/recommended", // Helps avoid common async/promise issues
-        "plugin:@typescript-eslint/recommended" // TypeScript-specific rules
+        "plugin:@typescript-eslint/recommended" // `TypeScript`-specific rules
     ],
-    "plugins": ["react", "react-hooks", "@typescript-eslint"],
+    "plugins": ["`react`", "`react-hooks`", "`@typescript-eslint`"],
     "settings": {
         "react": {
-            "version": "detect" // Automatically detects React version
+            "version": "detect" // Automatically detects `React` version
         }
     },
     "overrides": [
@@ -239,12 +240,12 @@ then
             "files": ["*.js", "*.jsx"],
              "extends": ["./.eslintrc-custom-rules.json"], // Apply custom rules            
              "parserOptions": {              
-               "project": null // Disables TypeScript-specific checks for JS files
+               "project": null // Disables `TypeScript`-specific checks for `JS` files
             },
             "rules": {
                 "@typescript-eslint/no-unused-vars": "off",
                 "@typescript-eslint/explicit-module-boundary-types": "off",
-                "@typescript-eslint/no-`var-requires"`: "off", // Allows CommonJS require
+                "@typescript-eslint/no-var-requires": "off", // Allows CommonJS require
                 "@typescript-eslint/no-empty-function": "off" // Avoids unnecessary errors for empty functions
             }
         },
@@ -282,9 +283,9 @@ The configuration provides:
 
 #### 4\. Vite Configuration
 
-Transform your vite.config.js to vite.config.ts:
+Transform your `vite.config.js` to `vite.config.ts`:
 
-```javascript
+```typescript
 `import` react from '@vitejs/plugin-react';
 `import` { defineConfig } from 'vite';
 
@@ -305,10 +306,10 @@ Transform your vite.config.js to vite.config.ts:
 
 #### Key Changes
 
-*   **React Plugin Update**: The react() plugin now explicitly includes .tsx files to ensure Vite processes them correctly.
+*   `React` Plugin Update: The `react()` plugin now explicitly includes .tsx files to ensure `Vite` processes them correctly.
 *   **Extensions Update**: Adding .ts and .tsx to resolve.extensions allows importing TypeScript files without specifying their extensions, making imports cleaner.
 
-> **Note:** Ensure "moduleResolution": "Node" is set in your tsconfig.json. Without it, TypeScript might fail to resolve some Vite plugins correctly.
+> **Note:** Ensure "moduleResolution": "Node" is set in your tsconfig.json. Without it, `TypeScript` might fail to resolve some `Vite` plugins correctly.
 
 ### Step 2: Starting with Shared Utilities
 
@@ -337,7 +338,7 @@ shared/
 │ │ └── index.ts
 │ └── validation/
 │ ├── types.ts
-│ └── index.ts
+│ │ └── index.ts
 ```
 
 ### Step 3: Establishing Patterns for Component Migration
@@ -387,7 +388,7 @@ After your utilities are converted, move on to components:
 
 ### Conclusion
 
-Gradual TypeScript adoption allows teams to modernize their codebase while maintaining productivity. By starting with shared utilities and establishing clear patterns, you can successfully introduce TypeScript into any React application.
+Gradual TypeScript adoption allows teams to modernize their codebase while maintaining productivity. By starting with shared utilities and establishing clear patterns, you can successfully introduce `TypeScript` into any `React` application.
 
 Remember:  
 \- Take small, incremental steps  
@@ -396,6 +397,6 @@ Remember:
 \- Keep types and implementation separate  
 \- Gradually increase type strictness
 
-A smooth TypeScript migration is all about consistency and smart prioritization -- focus on what brings the most value first.
+A smooth `TypeScript` migration is all about consistency and smart prioritization -- focus on what brings the most value first.
 
 *This post was originally published on [Medium](https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722?source=rss-17340371ff6------2).*

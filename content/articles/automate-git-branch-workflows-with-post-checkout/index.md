@@ -23,13 +23,13 @@ externalLink: "https://mazenemam19.medium.com/automate-git-branch-workflows-with
 
 Git branch switching is a fundamental part of the daily workflow for most developers. But how much time do you spend *after* switching branches, manually running commands to ensure your environment is correctly set up? Updating dependencies, clearing caches, restarting your dev server… it can quickly become repetitive and drain your focus.
 
-What if you could automate these post-branch-switch tasks, freeing you to jump straight into coding? That's where Git's **post-checkout hook** comes to the rescue!
+What if you could automate these post-branch-switch tasks, freeing you to jump straight into coding? That's where `Git`'s **post-checkout hook** comes to the rescue!
 
-In this post, we'll explore how to create a powerful post-checkout hook using Bash to automate common tasks whenever you switch Git branches.
+In this post, we'll explore how to create a powerful post-checkout hook using `Bash` to automate common tasks whenever you switch `Git` branches.
 
 #### The post-checkout Script in Action
 
-Here's the complete Bash script we'll be building:
+Here's the complete `Bash` script we'll be building:
 
 ```bash
 #!/bin/bash
@@ -95,6 +95,6 @@ echo -e "${CYAN}Checking for dependency changes...${RESET}"
 
 ### Summary
 
-By setting up this post-checkout hook, you can dramatically streamline your Git branch switching workflow. No more manually running `git pull`, `pnpm install`, and restarting your dev server every time you change branches!
+By setting up this post-checkout hook, you can dramatically streamline your `Git` branch switching workflow. No more manually running `git pull`, `pnpm install`, and restarting your dev server every time you change branches!
 
 *This post was originally published on [Medium](https://mazenemam19.medium.com/automate-git-branch-workflows-with-post-checkout-6c7f2abc8f0a?source=rss-17340371ff6------2).*

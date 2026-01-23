@@ -21,7 +21,7 @@ source: "Medium"
 externalLink: "https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-react-choosing-the-right-approach-eecf653befe5?source=rss-17340371ff6------2"
 ---
 
-**Introduction:**When it comes to organizing logic in React, developers have two prominent approaches: fat components and fat pages. Imagine fat components as all-in-one powerhouses, handling significant logic within themselves, while fat pages delegate substantial logic to components, focusing on rendering the UI. In this article, we'll explore the pros and cons of each approach, provide practical examples, and discuss the factors to consider when deciding which approach suits your project best.
+**Introduction:**When it comes to organizing logic in `React`, developers have two prominent approaches: fat components and fat pages. Imagine fat components as all-in-one powerhouses, handling significant logic within themselves, while fat pages delegate substantial logic to components, focusing on rendering the UI. In this article, we'll explore the pros and cons of each approach, provide practical examples, and discuss the factors to consider when deciding which approach suits your project best.
 
 **Comparison: Fat Components vs. Fat Pages Through the Lens of Moving Houses**  
 To understand the distinction, `let's` draw an analogy. Imagine you're moving houses. Fat components can be likened to putting your things into boxes and neatly organizing everything in one place. It simplifies the moving process, making it easier to manage. On the other hand, fat pages are comparable to buying new stuff each time you move. While it may appear convenient initially, it can lead to redundancy and unnecessary complexity in the long run.
@@ -48,7 +48,7 @@ To understand the distinction, `let's` draw an analogy. Imagine you're moving ho
 
 **Single Responsibility Principle and Its Impact on Logic Organization**
 
-One crucial principle to consider when organizing logic in React is the Single Responsibility Principle (SRP). The SRP states that a component or module should have only one reason to change. Applying this principle helps to create more maintainable and scalable codebases. Let's explore how the SRP aligns with the concepts of fat components and fat pages.
+One crucial principle to consider when organizing logic in `React` is the Single Responsibility Principle (SRP). The SRP states that a component or module should have only one reason to change. Applying this principle helps to create more maintainable and scalable codebases. Let's explore how the SRP aligns with the concepts of fat components and fat pages.
 
 **SRP and Fat Components:  
 **Fat components inherently run the risk of violating the SRP. As a component grows in size and complexity, it becomes challenging to adhere to a single responsibility. The logic within a fat component may become entangled, making it harder to identify and modify specific functionalities. Therefore, when using fat components, it's crucial to be mindful of keeping each component focused on a single responsibility.
@@ -171,6 +171,6 @@ export default SelectComponent;
 
 By following this approach, we can easily modify and extend the functionality of the select component without affecting other parts of the application. This example demonstrates how applying the SRP can lead to more manageable and scalable codebases.
 
-Finally, whether you choose fat components or fat pages, or a combination of both, keep the Single Responsibility Principle in mind. Strive for modular, maintainable, and scalable code that aligns with your project's needs. Experiment, learn, and adapt your approach as your project evolves, ensuring an efficient and enjoyable development experience in React.
+Finally, whether you choose fat components or fat pages, or a combination of both, keep the Single Responsibility Principle in mind. Strive for modular, maintainable, and scalable code that aligns with your project's needs. Experiment, learn, and adapt your approach as your project evolves, ensuring an efficient and enjoyable development experience in `React`.
 
 *This post was originally published on [Medium](https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-react-choosing-the-right-approach-eecf653befe5?source=rss-17340371ff6------2).*

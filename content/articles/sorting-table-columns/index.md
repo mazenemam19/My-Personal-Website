@@ -3,18 +3,16 @@ title: "Sorting Table Columns"
 description: "I’ve been working with tables a lot these past few weeks, one task I got today was to implement a feature to sort table columns for unsorted data coming from the backend, this is how I tackled the task"
 date: "2022-03-12"
 banner:
-  src: "./banner.png"
+  src: "./images/banner.png"
   alt: "Sorting Table Columns"
 categories:
   - "react"
   - "reactjs"
   - "javascript"
-  - "javascripttips"
 keywords:
   - "react"
   - "reactjs"
   - "javascript"
-  - "javascripttips"
 source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/sorting-table-columns-8078d6b84337"
 ---
@@ -25,7 +23,7 @@ I’ve been working with tables a lot these past few weeks, one task I got today
 
 > NB: I’m using [jsonplaceholder](https://jsonplaceholder.typicode.com/) to mimic the API I’ll be using for fetching data
 
-So here’s what happened so far, our return statement ran first, we draw the table, _Data_ and _TableHeaders_ are initially empty, so nothing is shown, then the _useEffect_ kicks in, we fetch our data, set the _Data_ state to _JSON variable_ resulted from the API call and then we set _TableHeaders_ to the keys of the first object in _JSON_
+So here’s what happened so far, our return statement ran first, we draw the table, _Data_ and _TableHeaders_ are initially empty, so nothing is shown, then the _useEffect_ kicks in, we fetch our data, set the _Data_ state to the `JSON` variable resulted from the `API` call and then we set _TableHeaders_ to the keys of the first object in _JSON_
 
 The result of _json[0]_ is
 
@@ -67,7 +65,7 @@ _TableHeaders_ now look like this
 ["title", "id", "completed", "userId"]
 ```
 
-![](./image-1.png)
+![](./images/image-1.png)
 
 and that’s it! we have sorted our columns successfully in the same order provided in the schema 🥳
 
@@ -110,13 +108,13 @@ And that’s the two edge case scenarios!
 
 The result will look like this:
 
-![](./image-2.png)
+![](./images/image-2.png)
 
 Hope you found this post useful,
 
 Feel free to leave a comment if you have any questions.
 
-And you can find all the code from the demos here: [https://github.com/mazenadel19/React-SortingTableColumns](https://github.com/mazenadel19/React-SortingTableColumns)
+And you can find all the code from the demos here: [https://github.com/mazenadel19/`React`-SortingTableColumns](https://github.com/mazenadel19/React-SortingTableColumns)
 
 *This post was originally published on [Medium](https://medium.com/@mazenemam19/sorting-table-columns-8078d6b84337).*
 

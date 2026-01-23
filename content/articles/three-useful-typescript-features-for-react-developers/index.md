@@ -19,15 +19,13 @@ source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/three-useful-typescript-features-for-react-developers-1a4e9a1a3185"
 ---
 
-![](./banner.png)
+As a `React` developer, you’re likely familiar with the benefits of using a statically-typed language like `TypeScript`. `TypeScript` offers a type system that helps catch errors early, making it easier to write more reliable code faster. In a `React` context, `TypeScript` can also provide additional benefits such as improved code maintainability and extensibility. If you’re new to `TypeScript`, it’s a superset of `JavaScript` that adds optional static types to your code. This means that you can catch errors before your code runs, which can save you time and improve the quality of your codebase.
 
-As a React developer, you’re likely familiar with the benefits of using a statically-typed language like TypeScript. TypeScript offers a type system that helps catch errors early, making it easier to write more reliable code faster. In a React context, TypeScript can also provide additional benefits such as improved code maintainability and extensibility. If you’re new to TypeScript, it’s a superset of JavaScript that adds optional static types to your code. This means that you can catch errors before your code runs, which can save you time and improve the quality of your codebase.
-
-Matt Pocock’s [React With Typescript](https://www.totaltypescript.com/tutorials/react-with-typescript) course is an excellent resource to learn about how TypeScript works with React. Here are three useful features that I learned from the course:
+Matt Pocock’s [`React With Typescript`](https://www.totaltypescript.com/tutorials/react-with-typescript) course is an excellent resource to learn about how `TypeScript` works with `React`. Here are three useful features that I learned from the course:
 
 ### 1. ComponentProps utility type:
 
-A common pattern in React is to create a component that takes props as an argument. TypeScript provides a utility type called ComponentProps, which automatically extracts the props type from a given component. This saves you time and helps avoid errors when defining a component’s props.
+A common pattern in `React` is to create a component that takes props as an argument. `TypeScript` provides a utility type called `ComponentProps`, which automatically extracts the props type from a given component. This saves you time and helps avoid errors when defining a component’s props.
 
 ```typescript
 import React from 'react';
@@ -53,7 +51,7 @@ const App = () => {
 };
 ```
 
-ComponentProps proves more useful when used with rest parameters and Native HTML Elements
+`ComponentProps` proves more useful when used with rest parameters and Native HTML Elements
 
 ```typescript
 import React from 'react';
@@ -71,11 +69,11 @@ function App() {
 }
 ```
 
-In this example, we’re using the ComponentProps utility type to define the props for a custom CustomButton component that extends the functionality of the native button element. By passing the onClick prop to CustomButton, we're able to handle the button click event and log a message to the console. The ...props syntax allows us to pass any additional props to the underlying button element, such as className or disabledand if we tried to pass an invalid prop to the CustomButton element, Typescript will throw an error.
+In this example, we’re using the `ComponentProps` utility type to define the props for a custom `CustomButton` component that extends the functionality of the native `button` element. By passing the `onClick` prop to `CustomButton`, we're able to handle the button click event and log a message to the console. The `...props` syntax allows us to pass any additional props to the underlying `button` element, such as `className` or `disabled`and if we tried to pass an invalid prop to the `CustomButton` element, `Typescript` will throw an error.
 
 ### 2. Union Types:
 
-Another useful TypeScript feature is the ability to use union types with useReducer. This allows you to define a state type that can have multiple variations. For example, you can specify the type of action and the exact payload key expected
+Another useful `TypeScript` feature is the ability to use union types with `useReducer`. This allows you to define a state type that can have multiple variations. For example, you can specify the type of action and the exact payload key expected
 
 ```typescript
 import { useReducer } from "react";
@@ -129,9 +127,9 @@ export const Reducer = () => {
 
 ### 3. Excess Properties & Explicit Typing:
 
-Finally, TypeScript provides a way to strongly type the functions returned by useState. This helps ensure that you’re using the correct type when updating the state and provide better error handling.
+Finally, `TypeScript` provides a way to strongly type the functions returned by `useState`. This helps ensure that you’re using the correct type when updating the state and provide better error handling.
 
-When you use the useState hook in a React component with TypeScript, the type of the state is inferred based on the initial value you provide. However, when you update the state using setState, TypeScript does not perform excess property checking by default. This means that you can add additional properties to the object you pass to setState, even if they are not part of the type of the state.
+When you use the `useState` hook in a `React` component with `TypeScript`, the type of the state is inferred based on the initial value you provide. However, when you update the state using `setState`, `TypeScript` does not perform excess property checking by default. This means that you can add additional properties to the object you pass to `setState`, even if they are not part of the type of the state.
 
 Consider the code below:
 
@@ -228,14 +226,14 @@ To get an error for this bug we can use explicit typing:
   </button>
 ```
 
-With explicit typing in place, TypeScript will now catch the typo in tagselected and the extra property otherValue, and throw an error. By catching these errors early, we can avoid bugs and improve the reliability of our code.
+With explicit typing in place, `TypeScript` will now catch the typo in tagselected and the extra property otherValue, and throw an error. By catching these errors early, we can avoid bugs and improve the reliability of our code.
 
-To summarize, TypeScript offers several useful features for React developers, including:
+To summarize, `TypeScript` offers several useful features for `React` developers, including:
 
-1. The ComponentProps utility type, which automatically extracts the props type from a given component and helps avoid errors when defining a component’s props.
-2. Union types, which allow you to define a state type that can have multiple variations and provide better error handling with useReducer.
-3. Explicit typing with useState functions, which helps ensure that you’re using the correct type when updating the state and catches errors early.
+1. The `ComponentProps` utility type, which automatically extracts the props type from a given component and helps avoid errors when defining a component’s props.
+2. Union types, which allow you to define a state type that can have multiple variations and provide better error handling with `useReducer`.
+3. Explicit typing with `useState` functions, which helps ensure that you’re using the correct type when updating the state and catches errors early.
 
-By leveraging these features, you can improve your React codebase’s maintainability, extensibility, and robustness. So next time you’re working on a React project, consider using TypeScript to take your development to the next level.
+By leveraging these features, you can improve your `React` codebase’s maintainability, extensibility, and robustness. So next time you’re working on a `React` project, consider using `TypeScript` to take your development to the next level.
 
 *This post was originally published on [Medium](https://medium.com/@mazenemam19/three-useful-typescript-features-for-react-developers-1a4e9a1a3185).*

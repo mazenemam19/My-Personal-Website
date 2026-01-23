@@ -25,19 +25,19 @@ I've realized that if I don't write down the specific "gotchas" and lightbulb mo
 
 I switched jobs recently. Whenever you join a new codebase, you learn a mix of general tech improvements and domain-specific quirks. Over the last few months, I've been maintaining a list of things that tripped me up, things I improved, and things I just found cool.
 
-### 1. The "I Was Doing React Query Wrong" Saga
+### 1. The "I Was Doing `React` Query Wrong" Saga
 
-I started using **TanStack Query** (formerly React Query) more heavily this year, and it's been a game changer. But, boy, did I make it harder than it needed to be at first.
+I started using **`TanStack Query`** (formerly `React Query`) more heavily this year, and it's been a game changer. But, boy, did I make it harder than it needed to be at first.
 
 #### The Config Object Mistake
 
-For the first month, I created a `const queryConfig = { ... }` object and imported it into every `useQuery` hook to ensure consistent `staleTime` and `refetchOnWindowFocus` settings.
+For the first month, I created a `const queryConfig = { ... }` object and imported it into every `` `useQuery` `` hook to ensure consistent `staleTime` and `refetchOnWindowFocus` settings.
 
-Turns out, I was reinventing the wheel. You can just set global defaults when initializing the client. Felt pretty silly deleting those imports.
+Turns out, I was reinventing the wheel. You can just set global defaults when initializing the `QueryClient`. Felt pretty silly deleting those imports.
 
 ```javascript
 // Do this once in your App entry point
-const queryClient = new QueryClient({
+const queryClient = new `QueryClient`({
   defaultOptions: {
     queries: {
       staleTime: 1000 * 60 * 5, // 5 minutes
@@ -51,13 +51,13 @@ const queryClient = new QueryClient({
 
 #### Global Error Handling with meta
 
-We needed a way to show toast notifications for API errors without having to write `onError: (err) => toast.error(err.message)` in every component.
+We needed a way to show toast notifications for `API` errors without having to write `onError: (err) => toast.error(err.message)` in every component.
 
 I found a discussion on GitHub about using the `meta` field to pass arbitrary data. Now, we handle errors globally in the QueryCache callback, but the actual message is controlled locally.
 
 ```javascript
 // In the component
-useQuery({
+`useQuery`({
   queryKey: ['todos'],
   queryFn: fetchTodos,
   meta: {
@@ -69,7 +69,7 @@ useQuery({
 ```javascript
 // In the QueryClient global config
 new QueryClient({
-  queryCache: new QueryCache({
+  queryCache: new `QueryCache`({
     onError: (error, query) => {
       if (query.meta?.errorMessage) {
         toast.error(query.meta.errorMessage)
@@ -99,47 +99,47 @@ Now, when we catch a 403, we silently refresh the token and retry the request wi
 
 📌 [StackOverflow Discussion](https://stackoverflow.com/a/6937030)
 
-### 3. Internationalization (i18next) Gotchas
+### 3. Internationalization (`i18next`) Gotchas
 
 I owe the codebase an apology for how I handled translations in the beginning. Let's break down a few mistakes I made:
 
-#### The t Function
+#### The `t` Function
 
-We were importing the `t` function directly from the i18next instance in non react component. The issue? It doesn't respond to language changes.
+We were importing the `t` function directly from the `i18next` instance in non react component. The issue? It doesn't respond to language changes.
 
-**Fix**: Use the pre-initialized i18next instance or use `const { t } = useTranslation()`. This ensures the component re-renders when the language changes.
+**Fix**: Use the pre-initialized i18next instance or use ``const { t } = useTranslation()`. This ensures the component re-renders when the language changes.
 
 📌 [GitHub Issue](https://github.com/i18next/react-i18next/issues/1236#issuecomment-762039023)  
 📌 [T outside React](https://www.locize.com/blog/how-to-use-i18next-t-outside-react-components)
 
-#### Plurals & The <Trans> Component
+#### Plurals & The `` `<Trans>` `` Component
 
-I used custom logic to handle singular/plural strings. Don't do that. i18next can handle it automatically if you name your keys properly (`key`, `key_one`, `key_other`).
+I used custom logic to handle singular/plural strings. Don't do that. `i18next` can handle it automatically if you name your keys properly (`key`, `key_one`, `key_other`).
 
-Also, if you need to bold a word inside a translation string or add a link, use the `<Trans>` component rather than chopping the string into pieces. It lets you interpolate React components right into the translation string.
+Also, if you need to bold a word inside a translation string or add a link, use the `` `<Trans>` `` component rather than chopping the string into pieces. It lets you interpolate React components right into the translation string.
 
 📌 [Plurals Documentation](https://www.i18next.com/translation-function/plurals#singular-plural)  
 📌 [Trans Component](https://react.i18next.com/latest/trans-component#alternative-usage-which-lists-the-components-v11.6.0)
 
 ### 4. WebSockets: The Cleanup Crew
 
-First time working with **WebSockets** (we used STOMP), and it worked great until I logged out and logged in again, only to see error with socket connection flashing on the screen.
+First time working with **`WebSockets`** (we used `STOMP`), and it worked great until I logged out and logged in again, only to see error with socket connection flashing on the screen.
 
 #### The Lesson: Cleanup is Critical
 
 When a user logs out:
 
-1.  Disconnect STOMP cleanly: `client.disconnect()`
+1. Disconnect STOMP cleanly: `` `client.disconnect()` ``
 2.  Close the WebSocket connection.
-3.  Clear any relevant storage (e.g., JWT).
+3. Clear any relevant storage (e.g., `JWT`).
 
-When the user logs back in, initialize a fresh connection. This ensures the socket handshake uses the new JWT. Reusing the old socket instance can leave you with expired or invalid credentials.
+When the user logs back in, initialize a fresh connection. This ensures the socket handshake uses the new `JWT`. Reusing the old socket instance can leave you with expired or invalid credentials.
 
 ### 5. API Typing & Caching
 
 #### Typing
 
-Here's a small but impactful TypeScript lesson with **axios** (or fetch wrappers):
+Here's a small but impactful TypeScript lesson with **`axios`** (or fetch wrappers):
 
 **Bad:**
 
@@ -153,7 +153,7 @@ const response = await api.get('/users'); // response is `any`
 const response = api.get<User[]>('/users'); // response is typed correctly
 ```
 
-By typing the HTTP verb itself, TypeScript knows exactly what data you're dealing with, saving you from having to cast it later on.
+By typing the HTTP verb itself, `TypeScript` knows exactly what data you're dealing with, saving you from having to cast it later on.
 
 #### Caching
 
@@ -162,16 +162,16 @@ Caching everything is tempting, but it's not always the best idea. Caching is "e
 *   **Worth it**: Large datasets that rarely change (e.g., country lists, currencies).
 *   **Not worth it**: Small, frequently changing data that needs to stay up-to-date.
 
-### 6. React Router: navigate(-1)
+### 6. `React Router`: navigate(-1)
 
-Small tip: If you want a "Back" button, use `navigate(-1)` to pop the history stack, similar to hitting the browser back button.
+Small tip: If you want a "Back" button, use `` `navigate(-1)` `` to pop the history stack, similar to hitting the browser back button.
 
-Use specific routes (`navigate('/previous-route')`) when you need to take the user to a particular place after an action.
+Use specific routes (`` `navigate('/previous-route')` ``) when you need to take the user to a particular place after an action.
 
 Another tip: Don't write your paths as strings everywhere, you can easily make a typo, a solution I adopted in our codebase was to create a constant and use it all over the app when I need to define routes:
 
 ```javascript
-export const APP_ROUTES = {
+export const `APP_ROUTES` = {
   base: "/discover",
   cards: {
     base: "/discover/cards",
@@ -185,13 +185,11 @@ export const APP_ROUTES = {
 
 ### 7. Husky:
 
-We added **Husky** for pre-commit hooks (linting/formatting), and it worked fine for me. Then, my colleague pulled the code, and it failed.
+We added **`Husky`** for pre-commit hooks (linting/formatting), and it worked fine for me. Then, my colleague pulled the code, and it failed.
 
 #### The Gotcha:
 
-The `.husky/pre-commit` file needs to be executable. If it isn't, Husky won't trigger on commit.
-
-Run the following command and push the permission change:
+The `` `.husky/pre-commit` `` file needs to be executable. If it isn't, Husky won't trigger on commit.
 
 ```bash
 chmod +x .husky/pre-commit

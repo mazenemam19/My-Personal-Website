@@ -2,8 +2,7 @@
 title: "Automate The Boring Stuff In React"
 description: "Have you heard of DRY before? In the world of programming, DRY stands for Don’t Repeat Yourself. React, being a library, lacks a lot of the boilerplate code, you don’t even get a folder for components folder in the src folder!!!"
 date: "2022-10-17"
-banner:
-  src: "./banner.jpg"
+banner: `n  src: "\.\/images\/banner\.jpg"
   alt: "Automate The Boring Stuff In React"
 categories:
   - "bash"
@@ -22,12 +21,10 @@ externalLink: "https://medium.com/@mazenemam19/automate-the-boring-stuff-in-reac
 Have you heard of DRY before?  
 In the world of programming, DRY stands for Don’t Repeat Yourself. React, being a library, lacks a lot of the boilerplate code, you don’t even get a folder for components folder in the src folder!!!
 
-I’ve been working with React for almost 3 years now, and I can’t begin to tell you how much time I wasted on the structure of my project or creating [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets) to help myself write code faster.
+`React`
 
-One thing Angular and Vue excel at is their CLI (command line interface), you can get a lot of things out of the box and won’t have to waste time on things that are mandatory to get a real project up and running.
-
-Angular being a framework, you have a specific folder structure for the project, you get the option to connect the router out of the box to it, and a CLI tool that helps you easily create components.  
-You type one line ng generate component component-name and get a folder with the component name you specified, an HTML file, a CSS file, a typescript file, and a file for testing. With Vue, you can get even move out of the box with their CLI tool, you can get a router, global state management, unit testing, and end-to-end testing.
+`Angular`  
+You type one line ng generate component component-name and get a folder with the component name you specified, an HTML file, a CSS file, a typescript file, and a file for testing. With `Vue`, you can get even move out of the box with their CLI tool, you can get a router, global state management, unit testing, and end-to-end testing.
 
 Today I took it into my own hands to right this wrong
 
@@ -285,3 +282,6 @@ Don’t forget to clap and share the post if you found it useful, it will help m
 Ciao 👋
 
 *This post was originally published on [Medium](https://medium.com/@mazenemam19/automate-the-boring-stuff-in-react-ee9b215f907b).*
+
+
+

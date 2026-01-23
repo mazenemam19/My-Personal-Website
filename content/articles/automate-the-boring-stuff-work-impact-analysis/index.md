@@ -2,8 +2,7 @@
 title: "Automate the Boring Stuff: Work Impact Analysis"
 description: "Automate the Boring Stuff: Work Impact Analysis..."
 date: "2025-11-13"
-banner:
-  src: "./banner.jpg"
+banner: `n  src: "\.\/images\/banner\.jpg"
   alt: "Automate the Boring Stuff: Work Impact Analysis"
 categories:
   - "productivity"
@@ -291,3 +290,5 @@ If you struggle to articulate your impact for reviews, negotiations, or job sear
 Because knowing your worth shouldn't be this hard.
 
 *This post was originally published on [Medium](https://mazenemam19.medium.com/automating-the-boring-stuff-work-impact-analysis-7b9427fa0f83?source=rss-17340371ff6------2).*
+
+

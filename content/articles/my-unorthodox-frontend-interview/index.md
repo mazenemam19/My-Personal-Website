@@ -25,13 +25,13 @@ Last week I did my first technical interview at a medium-size tech company, most
 
 **A: The difference is in the type of questions and what the interviewer seeks to learn about you.**
 
-Here is a comparison between applying to a React Developer role in those two different organizations.
+Here is a comparison between applying to a `React` Developer role in those two different organizations.
 
 In the small ones, you would typically be asked about programming languages and frameworks you will use in your daily life.   
-For example: in my last interview in a small company I was asked about the difference between var, let, and const, some more Javascript questions, and a Javascript problem, I was also asked If I’ve used Typescript before, then we moved to the React, I was asked about Context API, React Router and Redux Toolkit.
+For example: in my last interview in a small company I was asked about the difference between var, let, and const, some more `Javascript` questions, and a `Javascript` problem, I was also asked If I’ve used `Typescript` before, then we moved to the `React`, I was asked about `Context API`, `React Router` and `Redux Toolkit`.
 
 In the medium ones, the interviewer is after something else, they want to know if you know the value of the code you are writing and its effect on the whole project.  
-Example: I was asked about clean code, object-oriented programming (OOP), testing (unit testing — automated testing), website performance, tracking traffic, data structure, and the space and time complexity of an algorithm.
+Example: I was asked about clean code, object-oriented programming (`OOP`), testing (unit testing — automated testing), website performance, tracking traffic, data structure, and the space and time complexity of an algorithm.
 
 I was also asked some general frontend questions which I regret not answering perfectly :(
 
@@ -41,23 +41,22 @@ Hopefully, they will help you be more prepared for your next interview🤞
 
 {% youtube GihQAC1I39Q %}
 
-**Q2: What is the difference between HTTP and HTTPS?**
+**Q2: What is the difference between `HTTP` and `HTTPS`?**
 
 {% youtube nOmT_5hqgPk %}
 
-**Q3: What is the difference between Put and Patch request methods?**
+**Q3: What is the difference between `Put` and `Patch` request methods?**
 
 I didn’t know the answer to this one at all 😐 I’m still embarrassed about it.
 
 {% youtube LJajkjI5RHE %}
 
 **Q4: What are 3 ways you can use to optimize a page that loads 100 Images**  
-- Pagination   
-- Lazy loading  
-- Intersection Observer API
-
+- `Pagination`
+- `Lazy loading`
+- `Intersection Observer API`
 I found [this article](https://medhatdawoud.net/blog/optimize-data-fetching) to be very insightful on optimization and performance.  
-Have you heard of AbortController API before 👀 Check out [this article](https://svarden.se/post/debounced-fetch-with-abort-controller)!
+Have you heard of `AbortController API` before 👀 Check out [this article](https://svarden.se/post/debounced-fetch-with-abort-controller)!
 
 **Q5: Find all the duplicates in an array and explain the time complexity of your algorithm**
 
@@ -72,7 +71,7 @@ function removeDuplicates(arr) {
 
 ```
 
-If you are looking for a more efficient solution, you should check the video below, I tested both solutions on Leetcode and the one from the video was way faster than my solution.
+If you are looking for a more efficient solution, you should check the video below, I tested both solutions on `Leetcode` and the one from the video was way faster than my solution.
 
 {% youtube aMsSF1Il3IY %}
 
