@@ -2,6 +2,7 @@ import React from "react";
 import {
   AboutSection,
   ArticlesSection,
+  ContactSection,
   HeroSection,
   InterestsSection,
   Page,
@@ -21,6 +22,7 @@ export default function IndexPage() {
         <AboutSection sectionId='about' heading='About Me' />
         <InterestsSection sectionId='skills' heading='Skills' />
         <ProjectsSection sectionId='projects' heading='My Side Projects' />
+        <ContactSection sectionId="contact" heading="Contact" />
       </Page>
     </>
   );

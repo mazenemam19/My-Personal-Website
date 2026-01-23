@@ -47,6 +47,10 @@
         {
           "label": "mail",
           "url": "mailto:mazenemam19@proton.me"
+        },
+        {
+          "label": "Imprint",
+          "url": "/imprint"
         }
       ]
     },
