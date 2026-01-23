@@ -3,7 +3,7 @@ title: "Automate The Boring Stuff In React"
 description: "Have you heard of DRY before? In the world of programming, DRY stands for Don’t Repeat Yourself. React, being a library, lacks a lot of the boilerplate code, you don’t even get a folder for components folder in the src folder!!!"
 date: "2022-10-17"
 banner:
-  src: "./banner.jpg"
+  src: "./images/banner.jpg"
   alt: "Automate The Boring Stuff In React"
 categories:
   - "bash"
@@ -147,7 +147,7 @@ Then we use echocommand to output a text and save the value the user writes into
 You can run the script by writing bash component.sh   
 This is the output I got after running the script at this point
 
-![](./image-1.png)
+![](./images/image-1.png)
 
 I was prompted with a question asking me to enter the component name, I typed navbar and clicked enter, then I was prompted with the jsx or tsx? I typed tsx and clicked enter, and I got the output you see in the last line.
 
@@ -166,7 +166,7 @@ Then you click ctrl+x to exit, save? Y filename to write: I don’t want to chan
 
 Let’s run the script once more bash component.sh repeat what we did the first time and see the result of our newly added code, if you didn’t face an error you should have a navbar folder with index.tsx and Navbar.module.css files in it
 
-![](./image-2.png)
+![](./images/image-2.png)
 
 Next, let’s write into a file, one thing I picked up from my senior at work is having my component wrapped in a section tag that has a className with the component name, and making this class a position relative in my CSS file so that anything absolutely positioned will be bounded by the boundaries of my component.
 
@@ -188,9 +188,9 @@ It will add a dot, the variable name stored in the component variable, and then 
 
 If we tested the code now and write navbar as our component name, we will get an error because a folder with that name already exists, we have two options, either delete that folder so we could create it again or create a component with another name, I will go with the latter.
 
-![](./image-3.png)
+![](./images/image-3.png)
 
-![](./image-4.png)
+![](./images/image-4.png)
 
 Next, we will create the jsx/tsx file.   
 Open your file once again by typing nano component.sh and add the code below
@@ -249,11 +249,11 @@ The weird syntax in lines 4 and line 15 is used to add a double quotation to our
 
 let’s see the result of our hard work 🤞
 
-![](./image-5.png)
+![](./images/image-5.png)
 
-![](./image-6.png)
+![](./images/image-6.png)
 
-![](./image-7.png)
+![](./images/image-7.png)
 
 NB: you might see an error Cannot find module ‘./yourModuleName.module.css’ or its corresponding type declarations. this is normal since we are not using a React project for testing but, a regular folder. I tested the script in a Typescript React project, and it didn’t show the error.
 

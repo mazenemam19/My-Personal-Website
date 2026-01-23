@@ -3,7 +3,7 @@ title: "Automate the Boring Stuff: Work Impact Analysis"
 description: "Automate the Boring Stuff: Work Impact Analysis..."
 date: "2025-11-13"
 banner:
-  src: "./banner.jpg"
+  src: "./images/banner.jpg"
   alt: "Automate the Boring Stuff: Work Impact Analysis"
 categories:
   - "productivity"
