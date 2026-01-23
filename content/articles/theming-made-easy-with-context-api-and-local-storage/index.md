@@ -233,7 +233,7 @@ First I added a boolean and called it isFirstRun to check if this is the first t
 I get a value stored on the `localStorage` (typically you won't have this value if this is your first time using the app) and I find the last theme the user had based on it.
 So if you had used this app before and this is the first time the component renders on your screen, I change isFirstRun to false, I change the default theme I get from the context with the last theme the user lastly had, and I override the value of my var( - text-color) with the color from my storedTheme else which runs whenever the user changes the theme, I'll change the var( - text-color) with the new color I'm getting from the context and save that object's name to the `local storage`. this way on the next run of this app, they'll have that last theme they had previously.
 Hope you find this tutorial useful, please feel free to leave a comment if you had any questions.
-You can find a repo with all the code from this tutorial here: https://github.com/mazenadel19/Themeing-With-Context-Api
+You can find a repo with all the code from this tutorial here: https://github.com/mazenemam19/Themeing-With-Context-Api
 And you see a live version here:
 https://cranky-sammet-29f6ab.netlify.app/
 Ciao 👋

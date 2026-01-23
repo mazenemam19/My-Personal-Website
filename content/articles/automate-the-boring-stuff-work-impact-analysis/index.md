@@ -32,7 +32,7 @@ So after wrestling with Notion for a while, I realized it can't do what I need. 
 Super simple concept: feed my Git commits to Gemini, get back a performance review. No elaborate integrations, no dashboards.  
 Just: Git history → AI → impact report.
 
-But before diving into code, `let` me show you how to actually use this because that's way more useful than architecture talk.
+But before diving into code, let me show you how to actually use this because that's way more useful than architecture talk.
 
 ### How to Run This Thing
 
@@ -50,14 +50,16 @@ Want a different model? Add GEMINI\_MODEL=whatever to your .env. Otherwise it de
 
 Now, setup:
 
-```bash pnpm run init-data
+```bash 
+pnpm run init-data
 ```
 
 Just spits out template files for profile.json. You need to crack it open and fill in the blanks in the template. Boring, I know, but the LLM needs to know your story to tell it back to you properly.
 
 After setup, three commands:
 
-```bash pnpm run collect --days=7        # Grab last week pnpm run collect --since=2025-11-01  # Everything since a date pnpm run analyze                 # Generate the report
+```bash 
+pnpm run collect --days=7        # Grab last week pnpm run collect --since=2025-11-01  # Everything since a date pnpm run analyze                 # Generate the report
 ```
 
 The collect command supports two flags: --days for "last N days" or --since for "everything after this date." It dumps your commits into data/work.json, then analyze ships it off to Gemini and writes a Markdown report.
@@ -286,7 +288,7 @@ That's what this is really about. Knowing my worth. Feeling my impact. Advocatin
 
 Code's on [GitHub](https://github.com/mazenemam19/work-impact-analysis-demo). Clone it, fork it, customize it. Add Jira if you want. Add PR data if you need it. Or keep it simple like I did.
 
-If you struggle to articulate your impact for reviews, negotiations, or job searches, give this a shot. Let an LLM be your mirror. Give it context, give it evidence, `let` it show you what you've built.
+If you struggle to articulate your impact for reviews, negotiations, or job searches, give this a shot. Let an LLM be your mirror. Give it context, give it evidence, let it show you what you've built.
 
 Because knowing your worth shouldn't be this hard.
 

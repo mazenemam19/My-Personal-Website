@@ -39,17 +39,17 @@ Hopefully, they will help you be more prepared for your next interview🤞
 
 **Q1: What is the difference between cookies, local storage, and session storage?**
 
-{% youtube GihQAC1I39Q %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GihQAC1I39Q" frameborder="0" allowfullscreen></iframe>
 
 **Q2: What is the difference between `HTTP` and `HTTPS`?**
 
-{% youtube nOmT_5hqgPk %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nOmT_5hqgPk" frameborder="0" allowfullscreen></iframe>
 
 **Q3: What is the difference between `Put` and `Patch` request methods?**
 
 I didn’t know the answer to this one at all 😐 I’m still embarrassed about it.
 
-{% youtube LJajkjI5RHE %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LJajkjI5RHE" frameborder="0" allowfullscreen></iframe>
 
 **Q4: What are 3 ways you can use to optimize a page that loads 100 Images**  
 - `Pagination`
@@ -73,7 +73,7 @@ function removeDuplicates(arr) {
 
 If you are looking for a more efficient solution, you should check the video below, I tested both solutions on `Leetcode` and the one from the video was way faster than my solution.
 
-{% youtube aMsSF1Il3IY %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aMsSF1Il3IY" frameborder="0" allowfullscreen></iframe>
 
 **Bonus: Do you know that** [**for loop is the fastest loop**](https://blog.bitsrc.io/measuring-performance-of-different-javascript-loop-types-c0e9b1d193ed)?
 

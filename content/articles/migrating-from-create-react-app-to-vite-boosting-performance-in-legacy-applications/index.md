@@ -126,11 +126,11 @@ export default defineConfig({
 yarn add vite-plugin-eslint --dev
 ```
 ```javascript
-`import` react from '@vitejs/plugin-react';
-`import` { defineConfig } from 'vite';
-`import` eslintPlugin from 'vite-plugin-eslint';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+import eslintPlugin from 'vite-plugin-eslint';
 
-`export` default defineConfig({
+export default defineConfig({
     plugins: [react(), eslintPlugin()],
     build: {
         outDir: 'build',

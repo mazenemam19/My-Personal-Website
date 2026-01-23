@@ -185,12 +185,13 @@ Using the Network and Coverage tab can be a good start if we already have a smal
 
 The first thing we will do is install `CRACO` and a `Webpack` plugin called `webpack-bundle-analyzer` these packages will help us view the bundled code outputted by `Webpack` when we run our new script:
 
-```bash yarn add @craco/craco webpack-bundle-analyzer progress-bar-webpack-plugin chalk --dev
+```bash 
+yarn add @craco/craco webpack-bundle-analyzer progress-bar-webpack-plugin chalk --dev
 ```
 
 then we can add a new script to our `package.json` under scripts called analysis
 
-```
+```json
 "scripts": {
         "analysis": "craco build",
         // other scripts

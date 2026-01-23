@@ -90,7 +90,7 @@ echo "(￣^￣ )ゞ I'm done!"
 
 But first, what is a script/bash script/shell script?
 
-{% youtube I4EWvMFj37g %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I4EWvMFj37g" frameborder="0" allowfullscreen></iframe>
 
 NB: you can find what shells are installed on your system by opening your terminal and type
 

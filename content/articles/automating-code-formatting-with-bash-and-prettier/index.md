@@ -135,7 +135,8 @@ This script does the following:
 
 Make sure to make the pre-commit hook executable by running the following command in your `bash terminal`:
 
-```bash chmod +x .git/hooks/pre-commit
+```bash 
+chmod +x .git/hooks/pre-commit
 ```
 
 ### Step 7: Test the Pre-Commit Hook
@@ -170,7 +171,7 @@ By following the steps in this tutorial, you can ensure that all of your code is
 
 If you enjoy automating tasks in your development workflow, you might also be interested in my other post on [automating the creation of React components](https://mazenadel19.medium.com/automate-the-boring-stuff-in-react-ee9b215f907b).
 
-I hope this tutorial has been helpful. If you have any questions or feedback, please `let` us know in the comments!
+I hope this tutorial has been helpful. If you have any questions or feedback, please let us know in the comments!
 
 > **_Update:_** Excited to share that I've significantly enhanced this pre-commit hook! Read about the evolved version with `ESLint` integration, colorized output, and parallel processing in my new post:_ [_"_Level Up Your Pre-Commit Hook: Beyond Formatting_"_](https://mazenadel19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2)_._
 

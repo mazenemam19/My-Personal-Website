@@ -72,7 +72,7 @@ npm install --save-dev typescript @types/react @types/react-dom @typescript-esli
 
 If your project includes scripts that lint `JavaScript` files, update them to support .ts and .tsx files as well:
 
-```
+```json
 "scripts": {
    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
    "lint:errors": "eslint --ext .js,.jsx,.ts,.tsx . --quiet",
@@ -286,10 +286,10 @@ The configuration provides:
 Transform your `vite.config.js` to `vite.config.ts`:
 
 ```typescript
-`import` react from '@vitejs/plugin-react';
-`import` { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-`export` default defineConfig({
+export default defineConfig({
     plugins: [
         react({
             include: /\.(jsx|tsx)$/, // Ensure .tsx files are processed correctly

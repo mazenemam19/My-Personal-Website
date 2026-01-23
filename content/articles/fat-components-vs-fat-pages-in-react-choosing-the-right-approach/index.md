@@ -24,7 +24,7 @@ externalLink: "https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-rea
 **Introduction:**When it comes to organizing logic in `React`, developers have two prominent approaches: fat components and fat pages. Imagine fat components as all-in-one powerhouses, handling significant logic within themselves, while fat pages delegate substantial logic to components, focusing on rendering the UI. In this article, we'll explore the pros and cons of each approach, provide practical examples, and discuss the factors to consider when deciding which approach suits your project best.
 
 **Comparison: Fat Components vs. Fat Pages Through the Lens of Moving Houses**  
-To understand the distinction, `let's` draw an analogy. Imagine you're moving houses. Fat components can be likened to putting your things into boxes and neatly organizing everything in one place. It simplifies the moving process, making it easier to manage. On the other hand, fat pages are comparable to buying new stuff each time you move. While it may appear convenient initially, it can lead to redundancy and unnecessary complexity in the long run.
+To understand the distinction, let's draw an analogy. Imagine you're moving houses. Fat components can be likened to putting your things into boxes and neatly organizing everything in one place. It simplifies the moving process, making it easier to manage. On the other hand, fat pages are comparable to buying new stuff each time you move. While it may appear convenient initially, it can lead to redundancy and unnecessary complexity in the long run.
 
 **Advantages of Fat Components:**
 

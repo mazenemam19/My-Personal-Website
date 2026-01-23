@@ -19,7 +19,7 @@ externalLink: "https://medium.com/@mazenemam19/sorting-table-columns-8078d6b8433
 
 I’ve been working with tables a lot these past few weeks, one task I got today was to implement a feature to sort table columns for unsorted data coming from the backend, this is how I tackled the task
 
-{% gist https://gist.github.com/mazenadel19/c103dd61f3e721c7334316e47a5ea66e %}
+[Code](https://gist.github.com/mazenemam19/c103dd61f3e721c7334316e47a5ea66e)
 
 > NB: I’m using [jsonplaceholder](https://jsonplaceholder.typicode.com/) to mimic the API I’ll be using for fetching data
 
@@ -45,7 +45,7 @@ _Object.keys(json[0])_ returns an array with the keys of an object so now our _T
 setting the _TableHeaders_ & _Data_ states triggers a rerender, we then redraw our table and this is how it’d look like.
 Next, Sorting the Columns.
 
-{% gist https://gist.github.com/mazenadel19/2b1d61aea3414a004b6db154f4625a2f %}
+[Code](https://gist.github.com/mazenemam19/2b1d61aea3414a004b6db154f4625a2f)
 
 I created an array called _HeadersSchema_ which I’ll use to enforce the new order on my headers and since our _tbody_ is drawn through the values in _TableHeaders_ there won’t be much work needed on that end.
 
@@ -71,7 +71,7 @@ and that’s it! we have sorted our columns successfully in the same order provi
 
 Lastly, we’ll handle the edge case scenarios if the same order in our schema is duplicated or if an object in our schema has no order at all 🤔
 
-{% gist https://gist.github.com/mazenadel19/058c69ff32f41a2b4175c77b22e6af55 %}
+[Code](https://gist.github.com/mazenemam19/058c69ff32f41a2b4175c77b22e6af55)
 
 Luckily, both cases aren’t tough to handle.
 
@@ -114,8 +114,7 @@ Hope you found this post useful,
 
 Feel free to leave a comment if you have any questions.
 
-And you can find all the code from the demos here: [https://github.com/mazenadel19/`React`-SortingTableColumns](https://github.com/mazenadel19/React-SortingTableColumns)
+And you can find all the code from the demos here: [https://github.com/mazenemam19/React-SortingTableColumns](https://github.com/mazenemam19/React-SortingTableColumns)
 
 *This post was originally published on [Medium](https://medium.com/@mazenemam19/sorting-table-columns-8078d6b84337).*
 
-*This post was originally published on [Medium](https://medium.com/@mazenemam19/sorting-table-columns-8078d6b84337).*

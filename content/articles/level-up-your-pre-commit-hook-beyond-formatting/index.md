@@ -147,7 +147,8 @@ NC='\033[0m' # No Color
 
 And then using them within your echo commands like this:
 
-```bash echo -e "${RED}`Prettier` failed on $file. Please fix the issues and try again.${NC}"
+```bash 
+echo -e "${RED}`Prettier` failed on $file. Please fix the issues and try again.${NC}"
 ```
 
 A small touch, but a huge win for usability!
@@ -166,11 +167,12 @@ This simple addition helps you track execution time and spot potential bottlenec
 
 ### 🌐 Beyond JavaScript: Embracing TypeScript and More
 
-The original script was laser-focused on `JavaScript`. But `let's` face it: `TypeScript` is a major player now (and for good reason!). To keep up with the times, we've broadened file type support to include `TypeScript` (``.ts``, ``.tsx``) files.
+The original script was laser-focused on `JavaScript`. But let's face it: `TypeScript` is a major player now (and for good reason!). To keep up with the times, we've broadened file type support to include `TypeScript` (``.ts``, ``.tsx``) files.
 
 The file detection line now looks like this:
 
-```bash files=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.js$|\.jsx$|\.ts$|\.tsx$")
+```bash 
+files=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.js$|\.jsx$|\.ts$|\.tsx$")
 ```
 
 This ensures your pre-commit checks cover a wider spectrum of modern web development projects. You could easily expand this further to include `CSS`, `JSON`, or other file types `Prettier` and `ESLint` can handle!
