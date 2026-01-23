@@ -17,7 +17,7 @@ export default function IndexPage() {
       <SeoWrapper title="Mazen Emam" />
       <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
-        <ArticlesSection sectionId='articles' heading='Latest Articles' sources={["Medium"]} />
+        <ArticlesSection sectionId='articles' heading='Latest Articles' sources={["Blog"]} />
         <AboutSection sectionId='about' heading='About Me' />
         <InterestsSection sectionId='skills' heading='Skills' />
         <ProjectsSection sectionId='projects' heading='My Side Projects' />
