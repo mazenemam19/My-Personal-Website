@@ -7,16 +7,14 @@ banner:
   alt: "Theming Made Easy… With Context API And Local Storage"
 categories:
   - "react"
-  - "reactjs"
-  - "themes"
-  - "tutorial"
-  - "React Hooks"
+  - "context-api"
+  - "css"
+  - "react-hooks"
 keywords:
   - "react"
-  - "reactjs"
-  - "themes"
-  - "tutorial"
-  - "React Hooks"
+  - "context-api"
+  - "css"
+  - "react-hooks"
 source: "Medium"
 externalLink: "https://mazenemam19.medium.com/theming-made-easy-with-context-api-and-local-storage-a0f8fc634ae8"
 ---
@@ -160,7 +158,7 @@ const Navbar = () => {
 export default Navbar;
 ```
 
-Indentation screwed me a little here 😅Our navbar expects to get selectedTheme , themes and changeTheme (to change the value in the context state)as props so let's provide them with our navbar and provide the navbar to our `App` component
+Indentation screwed me a little here 😅 Our navbar expects to get selectedTheme , themes and changeTheme (to change the value in the context state)as props so let's provide them with our navbar and provide the navbar to our `App` component
 
 ```javascript
 // App.js

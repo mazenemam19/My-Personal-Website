@@ -6,19 +6,17 @@ banner:
   src: "./banner.jpg"
   alt: "Automate Git Branch Workflows with Post-Checkout"
 categories:
-  - "git-hooks"
-  - "productivity"
   - "git"
   - "automation"
-  - "workflow"
+  - "bash"
+  - "productivity"
 keywords:
-  - "git-hooks"
-  - "productivity"
   - "git"
   - "automation"
-  - "workflow"
+  - "bash"
+  - "productivity"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/automate-git-branch-workflows-with-post-checkout-6c7f2abc8f0a?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/automate-git-branch-workflows-with-post-checkout-6c7f2abc8f0a"
 ---
 
 Git branch switching is a fundamental part of the daily workflow for most developers. But how much time do you spend *after* switching branches, manually running commands to ensure your environment is correctly set up? Updating dependencies, clearing caches, restarting your dev server… it can quickly become repetitive and drain your focus.
@@ -97,4 +95,4 @@ echo -e "${CYAN}Checking for dependency changes...${RESET}"
 
 By setting up this post-checkout hook, you can dramatically streamline your `Git` branch switching workflow. No more manually running `git pull`, `pnpm install`, and restarting your dev server every time you change branches!
 
-*This post was originally published on [Medium](https://mazenemam19.medium.com/automate-git-branch-workflows-with-post-checkout-6c7f2abc8f0a?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/automate-git-branch-workflows-with-post-checkout-6c7f2abc8f0a).*

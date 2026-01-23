@@ -6,19 +6,19 @@ banner:
   src: "./banner.jpg"
   alt: "Level Up Your Pre-Commit Hook: Beyond Formatting"
 categories:
-  - "software-development"
-  - "productivity"
-  - "programming"
+  - "git"
+  - "eslint"
+  - "prettier"
+  - "automation"
   - "clean-code"
-  - "web-development"
 keywords:
-  - "software-development"
-  - "productivity"
-  - "programming"
+  - "git"
+  - "eslint"
+  - "prettier"
+  - "automation"
   - "clean-code"
-  - "web-development"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2"
 ---
 
 It's been almost two years since I first published **`Automating Code Formatting with Bash and Prettier`**. If you're new to the idea of using `Git` pre-commit hooks and `Prettier` for automatic formatting, I highly recommend taking a quick look at that [original post](https://mazenadel19.medium.com/automating-code-formatting-with-bash-and-prettier-f5f951e1522f) first -- it lays the foundation for what we're about to explore today.
@@ -262,4 +262,4 @@ fi
 
 Automating these checks right at the commit stage is a fantastic way to catch issues early, maintain code consistency, and foster a healthier codebase overall. Give this updated script a try -- you might be surprised how much smoother and more confident your development process becomes!
 
-*This post was originally published on [Medium](https://mazenadel19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenadel19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2).*

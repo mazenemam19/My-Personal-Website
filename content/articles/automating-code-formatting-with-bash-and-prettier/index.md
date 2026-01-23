@@ -6,19 +6,19 @@ banner:
   src: "./banner.jpg"
   alt: "Automating Code Formatting with Bash and Prettier"
 categories:
-  - "productivity"
-  - "software-development"
-  - "programming"
-  - "web-development"
+  - "prettier"
+  - "bash"
+  - "git"
+  - "automation"
   - "clean-code"
 keywords:
-  - "productivity"
-  - "software-development"
-  - "programming"
-  - "web-development"
+  - "prettier"
+  - "bash"
+  - "git"
+  - "automation"
   - "clean-code"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/automating-code-formatting-with-bash-and-prettier-f5f951e1522f?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/automating-code-formatting-with-bash-and-prettier-f5f951e1522f"
 ---
 
 Code formatting can be a tedious and time-consuming task, but it's also an essential part of writing clean and maintainable code. Inconsistent formatting can make it difficult to read and understand code and can even introduce bugs or errors.
@@ -33,13 +33,13 @@ The first step is to install `Prettier` in your project. You can do this using `
 
 ```bash
 npm install --save-dev --save-exact prettier
-``````
+```
 
 or
 
 ```bash
 yarn add --dev --exact prettier
-``````
+```
 
 This installs `Prettier` as a development dependency in your project and ensures that you have a specific version of `Prettier` installed that will not change unexpectedly.
 

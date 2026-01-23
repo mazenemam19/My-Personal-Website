@@ -6,19 +6,17 @@ banner:
   src: "./banner.jpg"
   alt: "What Isn’t Tracked Gets Lost"
 categories:
-  - "front-end-development"
   - "react"
-  - "web-development"
-  - "javascript"
-  - "typescript"
+  - "career"
+  - "lessons-learned"
+  - "best-practices"
 keywords:
-  - "front-end-development"
   - "react"
-  - "web-development"
-  - "javascript"
-  - "typescript"
+  - "career"
+  - "lessons-learned"
+  - "best-practices"
 source: "Medium"
-externalLink: "https://javascript.plainenglish.io/what-isnt-tracked-gets-lost-b27abb36cff1?source=rss-17340371ff6------2"
+externalLink: "https://javascript.plainenglish.io/what-isnt-tracked-gets-lost-b27abb36cff1"
 ---
 
 I've realized that if I don't write down the specific "gotchas" and lightbulb moments I encounter during the daily grind, they just evaporate.
@@ -213,4 +211,4 @@ When you present problems and solutions, you enable better decision-making and b
 
 That's all for now! If you found any of these lessons helpful, feel free to share.
 
-*This post was originally published on [Medium](https://javascript.plainenglish.io/what-isnt-tracked-gets-lost-b27abb36cff1?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://javascript.plainenglish.io/what-isnt-tracked-gets-lost-b27abb36cff1).*

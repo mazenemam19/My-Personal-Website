@@ -6,36 +6,38 @@ banner:
   src: "./images/banner.jpg"
   alt: "Automate The Boring Stuff In React"
 categories:
-  - "bash"
-  - "reactjs"
-  - "cli"
   - "react"
+  - "bash"
+  - "automation"
+  - "productivity"
 keywords:
-  - "bash"
-  - "reactjs"
-  - "cli"
   - "react"
+  - "bash"
+  - "automation"
+  - "productivity"
 source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/automate-the-boring-stuff-in-react-ee9b215f907b"
 ---
 
-Have you heard of DRY before?  
-In the world of programming, DRY stands for Don’t Repeat Yourself. React, being a library, lacks a lot of the boilerplate code, you don’t even get a folder for components folder in the src folder!!!
+Have you heard of **DRY** before?  
+In the world of programming, **DRY** stands for **D**on’t **R**epeat **Y**ourself. `React`, being a library, lacks a lot of the boilerplate code—you don’t even get a `components` folder in the `src` directory!!!
 
-`React`
+I’ve been working with `React` for almost 3 years now, and I can’t begin to tell you how much time I wasted on the structure of my project or creating [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets) to help myself write code faster.
 
-`Angular`  
-You type one line ng generate component component-name and get a folder with the component name you specified, an HTML file, a CSS file, a typescript file, and a file for testing. With `Vue`, you can get even move out of the box with their CLI tool, you can get a router, global state management, unit testing, and end-to-end testing.
+One thing `Angular` and `Vue` excel at is their **CLI** (Command Line Interface). You get a lot of things out of the box and won’t have to waste time on the mandatory setup to get a real project up and running.
 
-Today I took it into my own hands to right this wrong
+Since `Angular` is a framework, it provides a specific folder structure, an out-of-the-box router, and a CLI tool that helps you easily create components.
+You type one line `ng generate component component-name` and get a folder with the component name you specified, an `HTML` file, a `CSS` file, a `TypeScript` file, and a file for testing. With `Vue`, you get even **more** out of the box with their CLI tool: a router, global state management, unit testing, and end-to-end testing.
 
-<iframe src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fgiphy.com%2Fembed%2FxT1R9yaseVFXRjcFsA%2Ftwitter%2Fiframe&amp;display_name=Giphy&amp;url=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FxT1R9yaseVFXRjcFsA%2Fgiphy.gif&amp;image=https%3A%2F%2Fi.giphy.com%2Fmedia%2FxT1R9yaseVFXRjcFsA%2Fgiphy.gif&amp;key=a19fcc184b9711e1b4764040d3dc5c07&amp;type=text%2Fhtml&amp;schema=giphy" width="435" height="326" frameborder="0" scrolling="no"><a href="https://medium.com/media/df850b5cd00bdfb2ff3d729a9d886f8b/href">https://medium.com/media/df850b5cd00bdfb2ff3d729a9d886f8b/href</a></iframe>
+Today, I took it into my own hands to right this wrong.
+
+![](./images/giphy.gif)
 
 Or at least try to.
 
-I was so sick of manually creating a folder for my component, creating a JSX, and a CSS file, and adding the template code for the 47876984654 times. I had an idea of what I needed, I needed to run a script!
+I was so sick of manually creating a folder for my component, creating `JSX` and `CSS` files, and adding the template code for the 47,876,984,654th time. I had an idea of what I needed: **I needed to run a script!**
 
-Here’s a look at what our final script will look like
+Here’s a preview of what our final script will look like:
 
 ```bash
 #! /bin/bash
@@ -90,7 +92,7 @@ echo "(￣^￣ )ゞ I'm done!"
 
 But first, what is a script/bash script/shell script?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I4EWvMFj37g" frameborder="0" allowfullscreen></iframe>
+[![Video](https://img.youtube.com/vi/I4EWvMFj37g/0.jpg)](https://www.youtube.com/watch?v=I4EWvMFj37g)
 
 NB: you can find what shells are installed on your system by opening your terminal and type
 

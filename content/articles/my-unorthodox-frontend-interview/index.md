@@ -6,13 +6,13 @@ banner:
   src: "./banner.png"
   alt: "My Unorthodox Frontend Interview"
 categories:
-  - "interviewquestions"
+  - "career"
   - "interview"
-  - "frontend"
+  - "frontend-development"
 keywords:
-  - "interviewquestions"
+  - "career"
   - "interview"
-  - "frontend"
+  - "frontend-development"
 source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/my-unorthodox-frontend-interview-986cb934b9f5"
 ---
@@ -39,17 +39,17 @@ Hopefully, they will help you be more prepared for your next interview🤞
 
 **Q1: What is the difference between cookies, local storage, and session storage?**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GihQAC1I39Q" frameborder="0" allowfullscreen></iframe>
+[![Video](https://img.youtube.com/vi/GihQAC1I39Q/0.jpg)](https://www.youtube.com/watch?v=GihQAC1I39Q)
 
 **Q2: What is the difference between `HTTP` and `HTTPS`?**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nOmT_5hqgPk" frameborder="0" allowfullscreen></iframe>
+[![Video](https://img.youtube.com/vi/nOmT_5hqgPk/0.jpg)](https://www.youtube.com/watch?v=nOmT_5hqgPk)
 
 **Q3: What is the difference between `Put` and `Patch` request methods?**
 
 I didn’t know the answer to this one at all 😐 I’m still embarrassed about it.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LJajkjI5RHE" frameborder="0" allowfullscreen></iframe>
+[![Video](https://img.youtube.com/vi/LJajkjI5RHE/0.jpg)](https://www.youtube.com/watch?v=LJajkjI5RHE)
 
 **Q4: What are 3 ways you can use to optimize a page that loads 100 Images**  
 - `Pagination`
@@ -73,7 +73,7 @@ function removeDuplicates(arr) {
 
 If you are looking for a more efficient solution, you should check the video below, I tested both solutions on `Leetcode` and the one from the video was way faster than my solution.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aMsSF1Il3IY" frameborder="0" allowfullscreen></iframe>
+[![Video](https://img.youtube.com/vi/aMsSF1Il3IY/0.jpg)](https://www.youtube.com/watch?v=aMsSF1Il3IY)
 
 **Bonus: Do you know that** [**for loop is the fastest loop**](https://blog.bitsrc.io/measuring-performance-of-different-javascript-loop-types-c0e9b1d193ed)?
 

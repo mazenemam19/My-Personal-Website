@@ -6,19 +6,17 @@ banner:
   src: "./banner.jpg"
   alt: "Gradual TypeScript Adoption in React"
 categories:
-  - "typescript"
-  - "javascript"
-  - "reactjs"
-  - "eslint"
   - "react"
+  - "typescript"
+  - "migration"
+  - "best-practices"
 keywords:
-  - "typescript"
-  - "javascript"
-  - "reactjs"
-  - "eslint"
   - "react"
+  - "typescript"
+  - "migration"
+  - "best-practices"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722"
 ---
 
 After maintaining a mid-sized `React` application for several years, our team decided to adopt `TypeScript`. Instead of a big-bang approach that would require rewriting the entire codebase, we chose a gradual migration strategy. In this article, I'll share our experience and provide a practical guide for teams looking to adopt `TypeScript` in their existing `React` applications.
@@ -165,8 +163,9 @@ The separation keeps our configuration clean and focused:
 Create a global.d.ts file at your project root:
 
 ```typescript
-// Extend existing modules declare module 'react-intl' {
- `export` function FormattedMessage(props: any): JSX.Element;
+// Extend existing modules 
+declare module 'react-intl' {
+ export function FormattedMessage(props: any): JSX.Element;
 }
 ```
 
@@ -182,7 +181,7 @@ In my case, I used it to manually declare types for a library (react-intl) due t
 
 To ensure a smooth transition from `JavaScript` to `TypeScript`, we updated .eslintrc. This configuration enforces strict type-checking for `TypeScript` while allowing some flexibility for `JavaScript` files.
 
-3.1 create a base config file, mine is .eslintrc-custom-rules.json:
+#### 3.1 Create a base config file, mine is .eslintrc-custom-rules.json:
 
 ```json
 {
@@ -399,4 +398,4 @@ Remember:
 
 A smooth `TypeScript` migration is all about consistency and smart prioritization -- focus on what brings the most value first.
 
-*This post was originally published on [Medium](https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722).*
