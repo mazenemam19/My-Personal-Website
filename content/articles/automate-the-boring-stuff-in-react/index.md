@@ -2,7 +2,8 @@
 title: "Automate The Boring Stuff In React"
 description: "Have you heard of DRY before? In the world of programming, DRY stands for Don’t Repeat Yourself. React, being a library, lacks a lot of the boilerplate code, you don’t even get a folder for components folder in the src folder!!!"
 date: "2022-10-17"
-banner: `n  src: "\.\/images\/banner\.jpg"
+banner:
+  src: "./banner.jpg"
   alt: "Automate The Boring Stuff In React"
 categories:
   - "bash"

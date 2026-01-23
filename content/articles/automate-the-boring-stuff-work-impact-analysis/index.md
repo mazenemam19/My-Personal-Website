@@ -2,7 +2,8 @@
 title: "Automate the Boring Stuff: Work Impact Analysis"
 description: "Automate the Boring Stuff: Work Impact Analysis..."
 date: "2025-11-13"
-banner: `n  src: "\.\/images\/banner\.jpg"
+banner:
+  src: "./banner.jpg"
   alt: "Automate the Boring Stuff: Work Impact Analysis"
 categories:
   - "productivity"
