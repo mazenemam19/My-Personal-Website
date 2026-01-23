@@ -31,7 +31,7 @@ You type one line `ng generate component component-name` and get a folder with t
 
 Today, I took it into my own hands to right this wrong.
 
-![](https://media.giphy.com/media/xT1R9yaseVFXRjcFsA/giphy.gif)
+![](./images/giphy.gif)
 
 Or at least try to.
 
