@@ -7,18 +7,18 @@ banner:
   alt: "Migrating from Create-React-App to Vite: Boosting Performance in Legacy Applications"
 categories:
   - "react"
-  - "reactjs"
-  - "javascript"
-  - "vitejs"
-  - "create-react-app"
+  - "vite"
+  - "migration"
+  - "performance"
+  - "build-tools"
 keywords:
   - "react"
-  - "reactjs"
-  - "javascript"
-  - "vitejs"
-  - "create-react-app"
+  - "vite"
+  - "migration"
+  - "performance"
+  - "build-tools"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/migrating-from-create-react-app-to-vite-boosting-performance-in-legacy-applications-63bbd93861e5?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/migrating-from-create-react-app-to-vite-boosting-performance-in-legacy-applications-63bbd93861e5"
 ---
 
 I'm excited to share that we are successfully transitioning from `create-react-app (CRA)` to `Vite` in my workplace! 🎉

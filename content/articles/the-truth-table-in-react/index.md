@@ -7,12 +7,12 @@ banner:
   alt: "The Truth Table in `React`"
 categories:
   - "react"
-  - "reactjs"
-  - "truthtable"
+  - "javascript"
+  - "fundamentals"
 keywords:
   - "react"
-  - "reactjs"
-  - "truthtable"
+  - "javascript"
+  - "fundamentals"
 source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/the-truth-table-in-react-a43f665a0cd3"
 ---
@@ -20,6 +20,12 @@ externalLink: "https://medium.com/@mazenemam19/the-truth-table-in-react-a43f665a
 One of the first topics you learn about when you get introduced to programming is “The Truth Table”, Do you remember that topic?  
 In case you don’t, here’s a reminder:
 
+| A | B | A && B | A \|\| B |
+|---|---|---|---|
+| true | true | true | true |
+| true | false | false | true |
+| false | true | false | true |
+| false | false | false | false |
 
 I remember memorizing that table, I kept repeating it day and night, but I never had any real application for it (or so I thought…)
 

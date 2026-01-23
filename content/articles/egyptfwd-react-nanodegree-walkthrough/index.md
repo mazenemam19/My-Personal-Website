@@ -6,14 +6,12 @@ banner:
   src: "./images/banner.jpg"
   alt: "EgyptFWD React Nanodegree Walkthrough"
 categories:
-  - "experience"
-  - "walkthrough"
-  - "nanodegree"
+  - "career"
+  - "learning"
   - "react"
 keywords:
-  - "experience"
-  - "walkthrough"
-  - "nanodegree"
+  - "career"
+  - "learning"
   - "react"
 source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/egyptfwd-react-nanodegree-walkthrough-2094238d9c64"

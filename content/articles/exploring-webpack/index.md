@@ -6,19 +6,17 @@ banner:
   src: "./banner.jpg"
   alt: "Exploring Webpack"
 categories:
-  - "performance"
-  - "javascript"
-  - "web-development"
-  - "react"
   - "webpack"
+  - "performance"
+  - "build-tools"
+  - "react"
 keywords:
-  - "performance"
-  - "javascript"
-  - "web-development"
-  - "react"
   - "webpack"
+  - "performance"
+  - "build-tools"
+  - "react"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/exploring-webpack-778d9a469b29?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/exploring-webpack-778d9a469b29"
 ---
 
 In each Frontend Developer's life, there comes a time when they need to edit something in the bundler, luckily this day hasn't come yet for me, but I had some free time so I decided it was the time to demystify these keywords: `Webpack` -- `CRACO` -- `Bundles` -- `Chunks` -- `Bundle Size` -- `Code Splitting` -- `Dynamic imports`.

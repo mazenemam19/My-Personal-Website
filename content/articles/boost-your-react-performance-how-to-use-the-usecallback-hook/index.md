@@ -6,19 +6,17 @@ banner:
   src: "./banner.jpg"
   alt: "Boost Your `React` Performance: How to Use the useCallback Hook"
 categories:
-  - "javascript-tips"
-  - "frontend-development"
-  - "web-performance"
   - "react"
+  - "performance"
+  - "react-hooks"
   - "javascript"
 keywords:
-  - "javascript-tips"
-  - "frontend-development"
-  - "web-performance"
   - "react"
+  - "performance"
+  - "react-hooks"
   - "javascript"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/boost-your-react-performance-how-to-use-the-usecallback-hook-5b56b948b4ac?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/boost-your-react-performance-how-to-use-the-usecallback-hook-5b56b948b4ac"
 ---
 
 As `React` developers, we're always looking for ways to optimize the performance of our applications. One way to achieve this is by using the `useCallback` hook.
@@ -124,7 +122,7 @@ const updatePerson = useCallback(() => {
 
 This creates a new object with all the properties of the old person object, but with the age property updated. Now, when we call the updatePerson function, `React` will detect the change in the person object reference and re-create the function.
 
-<a href="https://medium.com/media/da890325b5f55b1b3de353253c636849/href">https://medium.com/media/da890325b5f55b1b3de353253c636849/href</a>
+[Code Sandbox](https://codesandbox.io/embed/magical-violet-mj79jt)
 
 ### Conclusion
 
@@ -134,4 +132,4 @@ Additionally, it's crucial to prioritize code readability and maintainability to
 
 So the next time you're passing functions down to child components, consider using the `useCallback` hook to optimize your `React` application. Your users (and your CPU) will thank you!
 
-*This post was originally published on [Medium](https://mazenemam19.medium.com/boost-your-react-performance-how-to-use-the-usecallback-hook-5b56b948b4ac?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/boost-your-react-performance-how-to-use-the-usecallback-hook-5b56b948b4ac).*

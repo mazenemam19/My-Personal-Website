@@ -7,12 +7,12 @@ banner:
   alt: "Sorting Table Columns"
 categories:
   - "react"
-  - "reactjs"
   - "javascript"
+  - "algorithms"
 keywords:
   - "react"
-  - "reactjs"
   - "javascript"
+  - "algorithms"
 source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/sorting-table-columns-8078d6b84337"
 ---

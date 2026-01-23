@@ -6,19 +6,17 @@ banner:
   src: "./banner.jpg"
   alt: "Fat Components vs. Fat Pages in React: Choosing the Right Approach"
 categories:
-  - "reactjs"
-  - "components"
-  - "frontend-development"
   - "react"
-  - "javascript"
+  - "architecture"
+  - "design-patterns"
+  - "best-practices"
 keywords:
-  - "reactjs"
-  - "components"
-  - "frontend-development"
   - "react"
-  - "javascript"
+  - "architecture"
+  - "design-patterns"
+  - "best-practices"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-react-choosing-the-right-approach-eecf653befe5?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-react-choosing-the-right-approach-eecf653befe5"
 ---
 
 **Introduction:**When it comes to organizing logic in `React`, developers have two prominent approaches: fat components and fat pages. Imagine fat components as all-in-one powerhouses, handling significant logic within themselves, while fat pages delegate substantial logic to components, focusing on rendering the UI. In this article, we'll explore the pros and cons of each approach, provide practical examples, and discuss the factors to consider when deciding which approach suits your project best.
@@ -173,4 +171,4 @@ By following this approach, we can easily modify and extend the functionality of
 
 Finally, whether you choose fat components or fat pages, or a combination of both, keep the Single Responsibility Principle in mind. Strive for modular, maintainable, and scalable code that aligns with your project's needs. Experiment, learn, and adapt your approach as your project evolves, ensuring an efficient and enjoyable development experience in `React`.
 
-*This post was originally published on [Medium](https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-react-choosing-the-right-approach-eecf653befe5?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/fat-components-vs-fat-pages-in-react-choosing-the-right-approach-eecf653befe5).*

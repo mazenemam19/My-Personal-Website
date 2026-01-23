@@ -7,14 +7,14 @@ banner:
   alt: "Three Useful TypeScript Features For React Developers"
 categories:
   - "react"
-  - "reactjs"
   - "typescript"
-  - "frontenddevelopment"
+  - "tips"
+  - "best-practices"
 keywords:
   - "react"
-  - "reactjs"
   - "typescript"
-  - "frontenddevelopment"
+  - "tips"
+  - "best-practices"
 source: "Medium"
 externalLink: "https://medium.com/@mazenemam19/three-useful-typescript-features-for-react-developers-1a4e9a1a3185"
 ---

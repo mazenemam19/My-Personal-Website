@@ -8,11 +8,15 @@ banner:
 categories:
   - "productivity"
   - "automation"
+  - "career"
+  - "ai"
 keywords:
   - "productivity"
   - "automation"
+  - "career"
+  - "ai"
 source: "Medium"
-externalLink: "https://mazenemam19.medium.com/automating-the-boring-stuff-work-impact-analysis-7b9427fa0f83?source=rss-17340371ff6------2"
+externalLink: "https://mazenemam19.medium.com/automating-the-boring-stuff-work-impact-analysis-7b9427fa0f83"
 ---
 
 I've always had a problem with tracking my work. Started out using Notion, manually logging every task on one set monthly like some kind of developer diary. Super boring, but honestly? I liked it. There's something satisfying about looking back at years of accumulated progress.
@@ -292,6 +296,6 @@ If you struggle to articulate your impact for reviews, negotiations, or job sear
 
 Because knowing your worth shouldn't be this hard.
 
-*This post was originally published on [Medium](https://mazenemam19.medium.com/automating-the-boring-stuff-work-impact-analysis-7b9427fa0f83?source=rss-17340371ff6------2).*
+*This post was originally published on [Medium](https://mazenemam19.medium.com/automating-the-boring-stuff-work-impact-analysis-7b9427fa0f83).*
 
 
