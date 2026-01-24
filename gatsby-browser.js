@@ -5,7 +5,7 @@ import './gatsby-browser.css'
 export const wrapPageElement = ({ element, props }) => {
   const pathname = props?.path
   const isBlogPage =
-    pathname?.startsWith('/blog/') && pathname !== '/blog/';
+    pathname?.startsWith('/blog') && pathname !== '/blog';
   console.log('isBlogPage', isBlogPage)
 
   return (
