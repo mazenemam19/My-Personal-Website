@@ -179,6 +179,8 @@ export const `APP_ROUTES` = {
 } as const
 ```
 
+and then used as follows `navigate(APP_ROUTES.cards.base)`
+
 📌 [useNavigate Documentation](https://reactrouter.com/api/hooks/useNavigate)
 
 ### 7. Husky:
@@ -189,11 +191,15 @@ We added **`Husky`** for pre-commit hooks (linting/formatting), and it worked fi
 
 The `` `.husky/pre-commit` `` file needs to be executable. If it isn't, Husky won't trigger on commit.
 
+Run the following command and push the permission change:
+
 ```bash
 chmod +x .husky/pre-commit
 ```
 
 📌 [Husky Issues](https://github.com/typicode/husky/issues/1241)
+
+Oddly enough I faced this issue with V9 (when I'm supposed not to), anyhow life goes on …
 
 ### 8. Working With Project Managers
 

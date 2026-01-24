@@ -51,6 +51,8 @@ I didn’t know the answer to this one at all 😐 I’m still embarrassed about
 
 [![Video](https://img.youtube.com/vi/LJajkjI5RHE/0.jpg)](https://www.youtube.com/watch?v=LJajkjI5RHE)
 
+_the voice is a little low on this video, you might need to put your headsets on_
+
 **Q4: What are 3 ways you can use to optimize a page that loads 100 Images**  
 - `Pagination`
 - `Lazy loading`

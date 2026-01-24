@@ -19,6 +19,8 @@ source: "Medium"
 externalLink: "https://mazenemam19.medium.com/gradual-typescript-adoption-in-react-1bdb2b363722"
 ---
 
+You, a few months from now, after moving away from JavaScript.
+
 After maintaining a mid-sized `React` application for several years, our team decided to adopt `TypeScript`. Instead of a big-bang approach that would require rewriting the entire codebase, we chose a gradual migration strategy. In this article, I'll share our experience and provide a practical guide for teams looking to adopt `TypeScript` in their existing `React` applications.
 
 ### The Breaking Point: Why We Chose TypeScript
