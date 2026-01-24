@@ -84,6 +84,9 @@ _Object.keys(json[0])_ returns an array with the keys of an object so now our _T
 ```
 
 setting the _TableHeaders_ & _Data_ states triggers a rerender, we then redraw our table and this is how it’d look like.
+
+![](./images/image-0.webp)
+
 Next, Sorting the Columns.
 
 ```jsx

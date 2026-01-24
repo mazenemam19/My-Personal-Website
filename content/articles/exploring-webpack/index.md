@@ -32,6 +32,8 @@ So the first question is:
 Another important job that `Webpack` does is to resolve dependencies and include them in the final bundle.  
 Let me tell you a story about life before the front-end frameworks.
 
+![](./images/before-frameworks.webp)
+
 Back in the old, when we were using only `HTML`, `CSS`, and `JavaScript`, do you remember how we used to structure our `HTML` files?
 
 ```html
@@ -130,6 +132,7 @@ This script will use the default `Webpack` config which looks up in your project
 Have you noticed that a typical `React` app doesn't have `Webpack` in `package.json` or a `webpack.config.js` file in the project tree?
 
 ![](./images/image-1.png)
+![](./images/image-2.png)
 
 A Default Create-React-App
 

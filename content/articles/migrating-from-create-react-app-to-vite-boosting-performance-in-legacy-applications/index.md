@@ -23,7 +23,7 @@ externalLink: "https://mazenemam19.medium.com/migrating-from-create-react-app-to
 
 I'm excited to share that we are successfully transitioning from `create-react-app (CRA)` to `Vite` in my workplace! 🎉
 
-Switching wasn't straightforward, but it was necessary. Our app was becoming increasingly sluggish, and the developer experience (`DX`) was deteriorating. I found myself leaving my laptop on all day because restarting the app was painfully slow. If you ever removed node\_modules, reinstalled them, and attempted to start the app, you could lose an hour just waiting for everything to download and start up again. The app would usually take 12-15 minutes to start--a significant delay, especially when dealing with urgent bug reports. Additionally, [`CRA` is deprecated and is no longer recommended for bootstrapping `React` applications](https://medium.com/r?url=https%3A%2F%2Freact.dev%2Flearn%2Fstart-a-new-react-project).
+Switching wasn't straightforward, but it was necessary. Our app was becoming increasingly sluggish, and the developer experience (`DX`) was deteriorating. I found myself leaving my laptop on all day because restarting the app was painfully slow. If you ever removed node\_modules, reinstalled them, and attempted to start the app, you could lose an hour just waiting for everything to download and start up again. The app would usually take 12-15 minutes to start--a significant delay, especially when dealing with urgent bug reports. Additionally, [`CRA` is deprecated and is no longer recommended for bootstrapping `React` applications](https://react.dev/learn/installation#should-i-use-create-react-app).
 
 **Why `Vite`?**
 
@@ -37,7 +37,7 @@ Moving away from `Webpack` and `CRA` gave me a newfound appreciation for these t
 
 I hope that one day we'll have a true drop-in replacement for `CRA` and `Webpack`, so we won't need to make extensive file changes when switching to tools like `Vite`.
 
-If you have no idea what `Webpack`, `Vite`, or `Rspack` are, I went down this rabbit hole in [my last post](https://mazenadel19.medium.com/exploring-webpack-778d9a469b29), I explored `Webpack` and what it does. `Vite` and `Rspack` are more modern tools doing a similar job but more efficient.
+If you have no idea what `Webpack`, `Vite`, or `Rspack` are, I went down this rabbit hole in [my last post](https://mazenemam19.vercel.app/blog/exploring-webpack), I explored `Webpack` and what it does. `Vite` and `Rspack` are more modern tools doing a similar job but more efficient.
 
 ### My Experience with `Vite`: Pros and Cons
 
@@ -77,7 +77,8 @@ This is the most crucial step. Extensive research is essential. I browsed Reddit
     Ensure you're using a `Vite` version compatible with your `Node.js` version. After that, remove `react-scripts`, install `vite`, and create the `vite.config.js` file.
 
 ```bash
-yarn remove react-scripts yarn add vite @vitejs/plugin-react --dev
+yarn remove react-scripts 
+yarn add vite @vitejs/plugin-react --dev
 ```
 
 and in the project root

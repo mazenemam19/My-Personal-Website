@@ -21,7 +21,7 @@ source: "Medium"
 externalLink: "https://mazenemam19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2"
 ---
 
-It's been almost two years since I first published **`Automating Code Formatting with Bash and Prettier`**. If you're new to the idea of using `Git` pre-commit hooks and `Prettier` for automatic formatting, I highly recommend taking a quick look at that [original post](https://mazenadel19.medium.com/automating-code-formatting-with-bash-and-prettier-f5f951e1522f) first -- it lays the foundation for what we're about to explore today.
+It's been almost two years since I first published **`Automating Code Formatting with Bash and Prettier`**. If you're new to the idea of using `Git` pre-commit hooks and `Prettier` for automatic formatting, I highly recommend taking a quick look at that [original post](https://mazenemam19.vercel.app/blog/automating-code-formatting-with-bash-and-prettier) first -- it lays the foundation for what we're about to explore today.
 
 For those already familiar with that initial setup or ready to dive straight into the advanced features, buckle up! Because wow, has that little script evolved ever since!
 

@@ -48,11 +48,11 @@ To understand the distinction, let's draw an analogy. Imagine you're moving hous
 
 One crucial principle to consider when organizing logic in `React` is the Single Responsibility Principle (SRP). The SRP states that a component or module should have only one reason to change. Applying this principle helps to create more maintainable and scalable codebases. Let's explore how the SRP aligns with the concepts of fat components and fat pages.
 
-**SRP and Fat Components:  
-**Fat components inherently run the risk of violating the SRP. As a component grows in size and complexity, it becomes challenging to adhere to a single responsibility. The logic within a fat component may become entangled, making it harder to identify and modify specific functionalities. Therefore, when using fat components, it's crucial to be mindful of keeping each component focused on a single responsibility.
+**SRP and Fat Components:**
+Fat components inherently run the risk of violating the SRP. As a component grows in size and complexity, it becomes challenging to adhere to a single responsibility. The logic within a fat component may become entangled, making it harder to identify and modify specific functionalities. Therefore, when using fat components, it's crucial to be mindful of keeping each component focused on a single responsibility.
 
-**SRP and Fat Pages:  
-**Fat pages, by distributing logic across multiple components, can align more easily with the SRP. Each component within a fat page can focus on a specific responsibility, ensuring a modular and maintainable codebase. With this approach, it becomes easier to identify and modify the logic associated with a particular functionality without affecting the entire page.
+**SRP and Fat Pages:**
+Fat pages, by distributing logic across multiple components, can align more easily with the SRP. Each component within a fat page can focus on a specific responsibility, ensuring a modular and maintainable codebase. With this approach, it becomes easier to identify and modify the logic associated with a particular functionality without affecting the entire page.
 
 **Factors to Consider When Deciding between Fat Components and Fat Pages:**
 

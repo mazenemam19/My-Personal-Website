@@ -169,10 +169,10 @@ The [warn] message indicates that `Prettier` has detected a formatting error in 
 
 By following the steps in this tutorial, you can ensure that all of your code is consistently formatted without having to spend time manually formatting each file. This can save you time and reduce the risk of formatting-related errors in your code.
 
-If you enjoy automating tasks in your development workflow, you might also be interested in my other post on [automating the creation of React components](https://mazenadel19.medium.com/automate-the-boring-stuff-in-react-ee9b215f907b).
+If you enjoy automating tasks in your development workflow, you might also be interested in my other post on [automating the creation of React components](https://mazenemam19.vercel.app/blog/automate-the-boring-stuff-in-react).
 
 I hope this tutorial has been helpful. If you have any questions or feedback, please let us know in the comments!
 
-> **_Update:_** Excited to share that I've significantly enhanced this pre-commit hook! Read about the evolved version with `ESLint` integration, colorized output, and parallel processing in my new post:_ [_"_Level Up Your Pre-Commit Hook: Beyond Formatting_"_](https://mazenadel19.medium.com/level-up-your-pre-commit-hook-beyond-formatting-026c9b504af2)_._
+> **_Update:_** Excited to share that I've significantly enhanced this pre-commit hook! Read about the evolved version with `ESLint` integration, colorized output, and parallel processing in my new post:_ [_"_Level Up Your Pre-Commit Hook: Beyond Formatting_"_](https://mazenemam19.vercel.app/blog/level-up-your-pre-commit-hook-beyond-formatting)_._
 
 *This post was originally published on [Medium](https://mazenemam19.medium.com/automating-code-formatting-with-bash-and-prettier-f5f951e1522f).*
