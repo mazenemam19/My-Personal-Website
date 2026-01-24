@@ -49,8 +49,25 @@ Which is the result expected if you know the truth table
 
 Another use-case is using the || operator to assign a default value
 
-[Code](https://gist.github.com/mazenemam19/725d911e7403c851ff5d42e5efe04175)
+```jsx
+import Blog from './Blog'
 
+function App() {
+  const [ posts, setPosts ] = useState(null)
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then((response) => response.json())
+      .then((json) => setPosts(json));
+  }, [])
+
+  return (
+    <div>
+      <Blog data={posts || []} />
+    </div>
+  )
+}
+```
 
 Ignoring that we could set the initial state to [] instead of null , using the || operator could come in handy.
 

@@ -19,7 +19,48 @@ externalLink: "https://medium.com/@mazenemam19/sorting-table-columns-8078d6b8433
 
 I’ve been working with tables a lot these past few weeks, one task I got today was to implement a feature to sort table columns for unsorted data coming from the backend, this is how I tackled the task
 
-[Code](https://gist.github.com/mazenemam19/c103dd61f3e721c7334316e47a5ea66e)
+```jsx
+import { useEffect, useState } from 'react';
+
+export function App() {
+
+  const [Data, setData] = useState([]);
+  const [TableHeaders, setTableHeaders] = useState([]);
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+      const json = await response.json();
+      setData(json);
+      setTableHeaders(Object.keys(json[0]));
+    }
+
+    fetchData();
+  }, []);
+
+  return (
+    <table>
+      <thead>
+        <tr>
+          {TableHeaders.map((Header, Index) => (
+            <th scope='col' key={Index}>{Header}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {Data?.map((Row, RowIndex) => (
+          <tr key={RowIndex}>
+            {TableHeaders.map((Header, ColumnIndex) => (
+              <td key={ColumnIndex}>{Row[Header]?.toString()}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+```
 
 > NB: I’m using [jsonplaceholder](https://jsonplaceholder.typicode.com/) to mimic the API I’ll be using for fetching data
 
@@ -45,7 +86,76 @@ _Object.keys(json[0])_ returns an array with the keys of an object so now our _T
 setting the _TableHeaders_ & _Data_ states triggers a rerender, we then redraw our table and this is how it’d look like.
 Next, Sorting the Columns.
 
-[Code](https://gist.github.com/mazenemam19/2b1d61aea3414a004b6db154f4625a2f)
+```jsx
+import { useEffect, useState } from 'react';
+
+const HeadersSchema = [
+  {
+    name: 'userId',
+    order: 88,
+  },
+  {
+    name: 'id',
+    order: 6,
+  },
+  {
+    name: 'title',
+    order: 2,
+  },
+  {
+    name: 'completed',
+    order: 9,
+  },
+];
+
+export function App() {
+  const [Data, setData] = useState([]);
+  const [TableHeaders, setTableHeaders] = useState([]);
+
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+      const json = await response.json();
+      const TableHeaders = [];
+
+      Object.keys(json[0]).forEach(Key => {
+        HeadersSchema.forEach(Header => {
+          if (Header.name === Key) {
+            TableHeaders[Header.order] = Key;
+          }
+        });
+      });
+
+      setTableHeaders(TableHeaders.filter(Header => Header));
+      setData(json);
+    };
+    fetchData();
+  }, []);
+
+  return (
+    <table>
+      <thead>
+        <tr>
+          {TableHeaders.map((Header, Index) => (
+            <th scope='col' key={Index}>{Header}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {Data?.map((Row, RowIndex) => (
+          <tr key={RowIndex}>
+            {TableHeaders.map((Header, ColumnIndex) => (
+              <td key={ColumnIndex}>{Row[Header]?.toString()}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+```
 
 I created an array called _HeadersSchema_ which I’ll use to enforce the new order on my headers and since our _tbody_ is drawn through the values in _TableHeaders_ there won’t be much work needed on that end.
 
@@ -71,7 +181,82 @@ and that’s it! we have sorted our columns successfully in the same order provi
 
 Lastly, we’ll handle the edge case scenarios if the same order in our schema is duplicated or if an object in our schema has no order at all 🤔
 
-[Code](https://gist.github.com/mazenemam19/058c69ff32f41a2b4175c77b22e6af55)
+```jsx
+import { useEffect, useState } from 'react';
+
+const HeadersSchema = [
+  {
+    name: 'userId',
+    order: 2,
+  },
+  {
+    name: 'id',
+  },
+  {
+    name: 'title',
+    order: 2,
+  },
+  {
+    name: 'completed',
+    order: 9,
+  },
+];
+
+export function App() {
+  const [Data, setData] = useState([]);
+  const [TableHeaders, setTableHeaders] = useState([]);
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+      const json = await response.json();
+      const TableHeaders = [];
+
+      const HandlingHeaders = Num => {
+        if (!TableHeaders[Num]) return Num;
+        else return HandlingHeaders(Num + 1);
+      };
+
+      Object.keys(json[0]).forEach(Key => {
+        HeadersSchema.forEach(Header => {
+          if (Header.name === Key) {
+            const HeaderOrder = HandlingHeaders(Header.order ? Header.order : 99);
+            TableHeaders[HeaderOrder] = Key;
+          }
+        });
+      });
+
+      setTableHeaders(TableHeaders.filter(Header => Header));
+      setData(json);
+    };
+    fetchData();
+  }, []);
+
+  return (
+    <table>
+      <thead>
+        <tr>
+          {TableHeaders.map((Header, Index) => (
+            <th scope='col' key={Index}>
+              {Header}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {Data?.map((Row, RowIndex) => (
+          <tr key={RowIndex}>
+            {TableHeaders.map((Header, ColumnIndex) => (
+              <td key={ColumnIndex}>{Row[Header]?.toString()}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+```
 
 Luckily, both cases aren’t tough to handle.
 
