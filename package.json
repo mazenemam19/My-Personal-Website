@@ -23,7 +23,7 @@
     "gatsby-plugin-sitemap": "^6.16.0",
     "gatsby-source-rss-feed": "^1.2.2",
     "gatsby-theme-portfolio-minimal": "latest",
-    "gatsby-transformer-sharp": "5.15.0",
+    "gatsby-transformer-sharp": "5.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.34.5"
