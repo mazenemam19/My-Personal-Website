@@ -19,7 +19,7 @@
     "gatsby-plugin-feed": "^5.16.0",
     "gatsby-plugin-google-gtag": "^5.16.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
-    "gatsby-plugin-sharp": "5.15.0",
+    "gatsby-plugin-sharp": "5.16.0",
     "gatsby-plugin-sitemap": "^6.16.0",
     "gatsby-source-rss-feed": "^1.2.2",
     "gatsby-theme-portfolio-minimal": "latest",
