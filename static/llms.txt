@@ -10,7 +10,7 @@ medium: https://mazenemam19.medium.com
 email: mailto:mazenemam19@proton.me
 
 description:
-Mazen Emam is a Software Engineer based in Egypt with 4+ years of experience.
+Mazen Emam is a Software Engineer based in Egypt with 5 years of experience.
 He specializes in frontend development, building scalable web applications, 
 and high-performance user interfaces for industries like manufacturing, analytics, and recruitment.
 

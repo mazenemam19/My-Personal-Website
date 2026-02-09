@@ -26,7 +26,7 @@ const SeoWrapper = ({ title, description, useTitleTemplate }) => {
                 "@type": "Organization",
                 "name": "Freelance / Self-Employed",
             },
-            "description": "Software Engineer specializing in frontend development with 4+ years of experience building scalable web applications.",
+            "description": "Software Engineer specializing in frontend development with 5 years of experience building scalable web applications.",
         },
     ];
 
