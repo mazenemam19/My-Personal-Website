@@ -1,5 +1,6 @@
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 import Banner from "./src/components/banners/ceasefire";
 
 export const wrapPageElement = ({ element, props }) => {
@@ -14,6 +15,7 @@ export const wrapPageElement = ({ element, props }) => {
         {element}
       </div>
       <SpeedInsights />
+      <Analytics />
     </>
   );
 };
