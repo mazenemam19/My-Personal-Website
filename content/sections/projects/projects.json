@@ -5,7 +5,7 @@
       "category": "frontend",
       "title": "Job Radar",
       "description": "A fully automated job-hunting dashboard that scrapes 30+ companies across three pipelines, scores results against a personal skill profile using regex gating and Gemini LLM analysis, and delivers filtered, ranked listings via a scheduled cron job and emails relevant jobupdates automatically",
-      "tags": ["Next.JS", "React", "Typescript","gemini-ai"],
+      "tags": ["Next.JS", "React", "Typescript","Gemini-AI"],
       "image": {
         "src": "../../images/job-radar.png",
         "alt": "Job Radar",

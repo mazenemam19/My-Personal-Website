@@ -8,6 +8,13 @@
       }
     },
     {
+      "label": "Next",
+      "image": {
+        "src": "../../images/next.png",
+        "alt": "Next"
+      }
+    },
+    {
       "label": "TypeScript",
       "image": {
         "src": "../../images/typescript.png",
