@@ -26,8 +26,8 @@
       "visible": true,
       "category": "fullstack",
       "title": "ECHO FM",
-      "description": "a fully autonomous, full-stack news commentary pipeline. It uses advanced neural models to ingest global news, analyze historical patterns, and broadcast sarcastic, witty audio-visual transmissions to the digital grid.",
-      "tags": ["Javascript", "Python", "Supabase", "gemini", "tts", "ffmpeg", "sfx"],
+      "description": "A fully autonomous, full-stack news commentary pipeline. It uses advanced neural models to ingest global news, analyze historical patterns, and broadcast sarcastic, witty audio-visual transmissions to the digital grid.",
+      "tags": ["Python", "LLM", "TTS", "FFMPEG", "SFX"],
       "image": {
         "src": "../../images/echofm.png",
         "alt": "ECHO FM",
