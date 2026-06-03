@@ -21,6 +21,28 @@
           "url": "https://job-radar-lyart.vercel.app/"
         }
       ]
+    },
+    {
+      "visible": true,
+      "category": "fullstack",
+      "title": "ECHO FM",
+      "description": "a fully autonomous, full-stack news commentary pipeline. It uses advanced neural models to ingest global news, analyze historical patterns, and broadcast sarcastic, witty audio-visual transmissions to the digital grid.",
+      "tags": ["Javascript", "Python", "Supabase", "gemini", "tts"],
+      "image": {
+        "src": "../../images/echofm.png",
+        "alt": "ECHO FM",
+        "linkTo": "https://github.com/mazenemam19/ECHO-FM"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/mazenemam19/ECHO-FM"
+        },
+        {
+          "type": "external",
+          "url": "https://echo-fm.netlify.app/"
+        }
+      ]
     }
   ],
   "button": {
