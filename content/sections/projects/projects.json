@@ -2,28 +2,6 @@
   "projects": [
     {
       "visible": true,
-      "category": "frontend",
-      "title": "Job Radar",
-      "description": "A fully automated job-hunting dashboard that scrapes 30+ companies across three pipelines, scores results against a personal skill profile using regex gating and Gemini LLM analysis, and delivers filtered, ranked listings via a scheduled cron job and emails relevant jobupdates automatically",
-      "tags": ["Next.JS", "React", "Typescript","Gemini-AI"],
-      "image": {
-        "src": "../../images/job-radar.png",
-        "alt": "Job Radar",
-        "linkTo": "https://github.com/mazenemam19/job-radar"
-      },
-      "links": [
-        {
-          "type": "github",
-          "url": "https://github.com/mazenemam19/job-radar"
-        },
-        {
-          "type": "external",
-          "url": "https://job-radar-lyart.vercel.app/"
-        }
-      ]
-    },
-    {
-      "visible": true,
       "category": "fullstack",
       "title": "ECHO FM",
       "description": "A fully autonomous, full-stack news commentary pipeline. It uses advanced neural models to ingest global news, analyze historical patterns, and broadcast sarcastic, witty audio-visual transmissions to the digital grid.",
@@ -43,7 +21,28 @@
           "url": "https://echo-fm.netlify.app/"
         }
       ]
-    },    {
+    }, {
+      "visible": true,
+      "category": "frontend",
+      "title": "Job Radar",
+      "description": "A fully automated job-hunting dashboard that scrapes 30+ companies across three pipelines, scores results against a personal skill profile using regex gating and Gemini LLM analysis, and delivers filtered, ranked listings via a scheduled cron job and emails relevant jobupdates automatically",
+      "tags": ["Next.JS", "React", "Typescript","Gemini-AI"],
+      "image": {
+        "src": "../../images/job-radar.png",
+        "alt": "Job Radar",
+        "linkTo": "https://github.com/mazenemam19/job-radar"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/mazenemam19/job-radar"
+        },
+        {
+          "type": "external",
+          "url": "https://job-radar-lyart.vercel.app/"
+        }
+      ]
+    },{
       "visible": true,
       "category": "frontend",
       "title": "Trackstube",
@@ -66,7 +65,7 @@
       ]
     },
     {
-      "visible": true,
+      "visible": false,
       "category": "frontend",
       "title": "Shopping Cart",
       "description": "E-commerce shopping cart application with robust state management using Redux Toolkit and TypeScript for type safety.",
