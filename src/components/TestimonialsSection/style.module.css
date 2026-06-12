@@ -1,0 +1,188 @@
+.Testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 3rem;
+}
+
+.TestimonialWrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+}
+
+.Testimonial {
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 2.5rem 2.5rem;
+    background: var(--card-background-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px var(--box-shadow-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    white-space: normal;
+    position: relative;
+    border: 1px solid var(--tertiary-color);
+    overflow: hidden;
+}
+
+.Testimonial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px var(--box-shadow-hover-color);
+}
+
+.QuoteContainer {
+    margin-bottom: 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-width: 0;
+}
+
+.QuoteMark {
+    position: absolute;
+    top: -3rem;
+    left: -0.5rem;
+    font-size: 6rem;
+    color: var(--primary-color);
+    opacity: 0.08;
+    font-family: serif;
+    user-select: none;
+    line-height: 1;
+}
+
+.Quote {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    display: block;
+    width: 100%;
+}
+
+.Quote:last-child {
+    margin-bottom: 0;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid var(--tertiary-color);
+    margin-top: auto;
+}
+
+.Author {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    min-width: 0;
+}
+
+.Name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Role {
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+    margin-top: 0.3rem;
+}
+
+.LinkedInLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.LinkedInLink:hover {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.LinkedInLink svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: currentColor;
+}
+
+@media (min-width: 992px) {
+    .Testimonials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Carousel Behavior */
+@media (max-width: 767px) {
+    .Testimonials {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: nowrap; /* Safer than white-space: nowrap */
+        margin: 0 -2.5rem;
+        padding: 0 2.5rem 2.5rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        gap: 0;
+    }
+
+    .Testimonials::-webkit-scrollbar {
+        display: none;
+    }
+
+    .TestimonialWrapper {
+        width: 16.25rem;
+        flex-shrink: 0;
+        margin-right: 2.5rem;
+        display: flex;
+    }
+
+    .TestimonialWrapper:last-child {
+        padding-right: 2.5rem;
+        width: 18.75rem;
+    }
+
+    .Testimonial {
+        padding: 2.5rem 1.5rem 1.5rem;
+    }
+
+    .Quote {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .QuoteMark {
+        top: -2.25rem;
+        font-size: 4.5rem;
+    }
+
+    .Name {
+        font-size: 1rem;
+    }
+
+    .Profile {
+        padding-top: 1.5rem;
+    }
+}
