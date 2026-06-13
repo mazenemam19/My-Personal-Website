@@ -14,6 +14,7 @@ public
 .cache
 .husky
 .vscode
+.playwright-mcp
 
 # misc
 .DS_Store

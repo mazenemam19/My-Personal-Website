@@ -1,0 +1,186 @@
+.Testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem; /* Large gaps for editorial breathing room */
+    max-width: 65rem;
+    margin: 4rem auto;
+}
+
+.TestimonialWrapper {
+    width: 100%;
+}
+
+.Testimonial {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Staggered Alternating Layout for Desktop */
+@media (min-width: 992px) {
+    .TestimonialWrapper:nth-child(even) .Testimonial {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .TestimonialWrapper:nth-child(even) .QuoteContainer {
+        align-items: flex-end;
+    }
+
+    .TestimonialWrapper:nth-child(even) .QuoteMark {
+        right: -1rem;
+        left: auto;
+    }
+
+    .TestimonialWrapper:nth-child(even) .Profile {
+        flex-direction: row-reverse;
+    }
+
+    .TestimonialWrapper:nth-child(even) .Author {
+        padding-right: 0;
+        padding-left: 1.5rem;
+        align-items: flex-end;
+    }
+}
+
+.QuoteContainer {
+    position: relative;
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.QuoteMark {
+    position: absolute;
+    top: -3.5rem;
+    left: -1rem;
+    font-size: 8rem;
+    color: var(--primary-color);
+    opacity: 0.05;
+    font-family: serif;
+    user-select: none;
+    line-height: 1;
+}
+
+.Quote {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+    text-wrap: pretty;
+}
+
+.Quote:last-child {
+    margin-bottom: 0;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.Author {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+}
+
+.Name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.02em;
+}
+
+.Role {
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+.LinkedInLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-shrink: 0;
+}
+
+.LinkedInLink:hover {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.LinkedInLink svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: currentColor;
+}
+
+/* The 'Ecstasy' Glow Effect */
+.Testimonial::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.8s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.Testimonial:hover::before {
+    opacity: 0.03;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-width: 767px) {
+    .Testimonials {
+        flex-direction: row;
+        gap: 0;
+        margin: 0 -2.5rem;
+        padding: 0 2.5rem 4rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .Testimonials::-webkit-scrollbar {
+        display: none;
+    }
+
+    .TestimonialWrapper {
+        width: 100%;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        padding-right: 2.5rem;
+    }
+
+    .Quote {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .QuoteMark {
+        font-size: 7rem;
+        top: -3rem;
+    }
+
+    .Profile {
+        margin-top: 2rem;
+    }
+}
