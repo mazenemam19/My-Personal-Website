@@ -1,6 +1,27 @@
 {
   "projects": [
-    {
+     {
+      "visible": true,
+      "category": "frontend",
+      "title": "Job Radar",
+      "description": "Originally a personal tool to filter my own job search, rebuilt into a multi-tenant SaaS where anyone can sign in and get a job feed scored against their skills and preferences. Scrapes 100+ companies across 9 different ATS platforms (Greenhouse, Lever, Ashby, etc.), runs a three-stage filtering pipeline (regex gates → per-user Gemini AI evaluation) before scoring, and caches personalized results per user",
+      "tags": ["Next.JS", "Typescript","Supabase","Gemini API"],
+      "image": {
+        "src": "../../images/job-radar.png",
+        "alt": "Job Radar",
+        "linkTo": "https://github.com/mazenemam19/job-radar"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/mazenemam19/job-radar"
+        },
+        {
+          "type": "external",
+          "url": "https://job-radar-lyart.vercel.app/"
+        }
+      ]
+    },{
       "visible": true,
       "category": "fullstack",
       "title": "ECHO FM",
@@ -19,27 +40,6 @@
         {
           "type": "external",
           "url": "https://echo-fm.netlify.app/"
-        }
-      ]
-    }, {
-      "visible": true,
-      "category": "frontend",
-      "title": "Job Radar",
-      "description": "A fully automated job-hunting dashboard that scrapes 30+ companies across three pipelines, scores results against a personal skill profile using regex gating and Gemini LLM analysis, and delivers filtered, ranked listings via a scheduled cron job and emails relevant jobupdates automatically",
-      "tags": ["Next.JS", "React", "Typescript","Gemini-AI"],
-      "image": {
-        "src": "../../images/job-radar.png",
-        "alt": "Job Radar",
-        "linkTo": "https://github.com/mazenemam19/job-radar"
-      },
-      "links": [
-        {
-          "type": "github",
-          "url": "https://github.com/mazenemam19/job-radar"
-        },
-        {
-          "type": "external",
-          "url": "https://job-radar-lyart.vercel.app/"
         }
       ]
     },{
