@@ -40,6 +40,10 @@
         {
           "type": "external",
           "url": "https://echo-fm.netlify.app/"
+        },
+        {
+          "type": "external",
+          "url": "https://echo-fm-radio.vercel.app"
         }
       ]
     },{
