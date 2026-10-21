@@ -2,14 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>QR Redirect</title>
-    <meta http-equiv="refresh" content="0; url=/mazen_website_qr.svg" />
-    <link rel="canonical" href="/mazen_website_qr.svg" />
-    <script>
-      window.location.replace('/mazen_website_qr.svg');
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website QR</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      img {
+        width: 100vmin;
+        height: 100vmin;
+      }
+    </style>
   </head>
   <body>
-    <p><a href="/mazen_website_qr.svg">Open QR image</a></p>
+    <img src="/mazen_website_qr.svg" alt="QR code for Mazen's website" />
   </body>
 </html>
