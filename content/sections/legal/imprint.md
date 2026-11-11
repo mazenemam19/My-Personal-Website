@@ -6,7 +6,7 @@ sectionId: imprint
 
 Mazen Emam  
 Software Engineer  
-Egypt
+Germany
 
 ### Contact Information
 Email: [mazenemam19@proton.me](mailto:mazenemam19@proton.me)  

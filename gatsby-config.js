@@ -2,7 +2,7 @@ module.exports = {
   trailingSlash: "never",
   siteMetadata: {
     title: `Mazen Emam`,
-    description: `Mazen Emam is a software engineer based in Egypt, He is proficient in developing user interfaces with React and other frontend web technologies. He has a good understanding of web development principles, including HTML, CSS, JavaScript, and related frameworks, and is experienced in building interactive, visually appealing web applications. He is also able to efficiently debug and optimize web applications, utilizing debugging tools and performance optimization techniques to ensure a smooth user experience.`,
+    description: `Mazen Emam is an Egyptian software engineer based in Germany, He is proficient in developing user interfaces with React and other frontend web technologies. He has a good understanding of web development principles, including HTML, CSS, JavaScript, and related frameworks, and is experienced in building interactive, visually appealing web applications. He is also able to efficiently debug and optimize web applications, utilizing debugging tools and performance optimization techniques to ensure a smooth user experience.`,
     author: `Mazen Emam`,
     siteUrl: `https://mazenemam19.vercel.app`,
   },
